@@ -51,7 +51,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
 h1,h2,h3,p,figure,blockquote{margin:0}
 button{font:inherit;color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
-.mono{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.mono{font-family:var(--mono);font-size:.86rem;letter-spacing:.14em;text-transform:uppercase}
 .cond{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.01em}
 .ital{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-variation-settings:normal}
 .hand{font-family:var(--hand);font-weight:700}
@@ -112,7 +112,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
 .btn.line{background:transparent}
 .btn:hover{transform:translateY(-2px)}
 .hero-foot{display:flex;justify-content:space-between;align-items:end;margin-top:28px;gap:20px}
-.hero-foot .mono{color:var(--text-muted);font-size:.72rem;line-height:1.8}
+.hero-foot .mono{color:var(--text-muted);font-size:.8rem;line-height:1.8}
 .spin{position:relative;width:132px;height:132px;flex:none}
 .spin svg{position:absolute;inset:0;animation:rot 18s linear infinite}
 .spin a{position:absolute;inset:30px;border-radius:50%;background:var(--ink);color:var(--on-dark);display:grid;place-items:center;text-decoration:none;font-size:1.6rem}
@@ -280,7 +280,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
 .stats div{padding:20px 14px 18px 0;border-bottom:1px solid #4A4540}
 .stats div:not(:nth-child(3n+1)){padding-left:14px;border-left:1px solid #4A4540}
 .stats b{display:block;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:clamp(2.6rem,7vw,4.6rem);line-height:.9;color:var(--oro-claro)}
-.stats span{display:block;margin-top:8px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted)}
+.stats span{display:block;margin-top:8px;font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted)}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.stats div:not(:nth-child(3n+1)){padding-left:0;border-left:0}.stats div:nth-child(even){padding-left:14px;border-left:1px solid #4A4540}}
 .c-pg{background:#16336B;color:#EAF0FA}
 .c-xm{background:#0D1B2B;color:#F2EDE3;justify-content:center}
@@ -355,14 +355,16 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
 .call .who span{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-muted)}
 .call .b{width:66px;height:66px;flex:none;border-radius:50%;border:0;display:grid;place-items:center;cursor:pointer;text-decoration:none}
 .call .copy{background:var(--paper-hi);color:var(--text)}
-.call .mail{background:#5DBF6B;color:#fff}
+.call .mail{background:var(--oro-claro);color:var(--text)}
+.call .wa{background:#5DBF6B;color:#fff}
 .call svg{width:28px;height:28px}
 #copied{font-family:var(--mono);font-size:.75rem;color:var(--oro-claro);min-height:1.2em;margin-top:12px;position:relative}
-.lines{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;border-top:1px solid #4A4540;padding-top:20px}
+.lines{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:40px;border-top:1px solid #4A4540;padding-top:20px}
 .lines .mono{display:block;color:var(--dark-muted);font-size:.7rem;margin-bottom:6px}
 .lines a,.lines p{font-size:1.1rem;text-decoration:none}
 .lines a:hover{text-decoration:underline}
 .foot{position:relative;margin-top:60px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--dark-muted);font-size:.7rem}
+@media (max-width:480px){.call{gap:10px;padding:12px}.call .av{width:48px!important;height:48px!important}.call .b{width:46px!important;height:46px!important}.call svg{width:22px;height:22px}.call .who b{font-size:1.1rem}}
 @media (max-width:640px){.lines{grid-template-columns:1fr}.call .av{width:60px;height:60px;font-size:1.4rem}.call .b{width:54px;height:54px}}
 
 /* Notificación */
@@ -386,6 +388,28 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
 .dock .cal .m{background:var(--ink);color:var(--on-dark);width:100%;text-align:center;font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.08em;padding:2px 0}
 .dock .cal .d{font-size:1.45rem;font-weight:500;line-height:1.3}
 @media (max-width:480px){.dock{gap:5px;padding:6px}.dock a{width:41px;height:41px;border-radius:12px}.dock svg{width:20px;height:20px}.dock .cal .d{font-size:1.05rem}.toast{bottom:82px}}
+
+/* UX: portada en celular, cifras, casos, dock con etiquetas */
+.hero-quick{display:none}
+@media (max-width:700px){
+  .hero-quick{display:block;margin:18px 0 6px}
+  .hero-quick p{font-size:1.15rem;line-height:1.4;font-weight:600;color:var(--text);max-width:30ch}
+  .hero-quick p span{display:block;font-weight:400;color:var(--text-muted);font-size:1rem;margin-top:4px}
+  .hero-quick .hero-cta{margin-top:16px}
+  .hero-quick .btn{padding:15px 20px;font-size:.78rem}
+  .hero-cta-main{display:none}
+  .topbar{transition:opacity .25s,transform .25s,visibility .25s}
+  body.past-hero .topbar{opacity:0;visibility:hidden;transform:translateY(-120%)}
+}
+@media (pointer:coarse){.fine-only{display:none}.drag{cursor:default}}
+.dark.cifras{padding:64px 0 72px}
+.cifras .stats{margin-top:22px}
+.more-wrap{display:flex;justify-content:center;margin-top:56px}
+.more-wrap[hidden]{display:none}
+.dark .btn.line{color:var(--on-dark);border-color:var(--on-dark)}
+.dock a{flex-direction:column;gap:3px;width:58px;height:60px}
+.dock .dl{font-style:normal;font-size:.62rem;font-weight:600;letter-spacing:.01em;line-height:1}
+@media (max-width:480px){.dock{gap:4px;padding:5px}.dock a{width:46px;height:50px;gap:2px}.dock svg{width:18px;height:18px}.dock .dl{font-size:.56rem}}
 </style>
 </head>
 <body class="gridbg">
@@ -408,6 +432,8 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
   <a href="#docencia"><span>05</span>Docencia</a>
   <a href="#formacion"><span>06</span>Formación</a>
   <a href="#contacto"><span>07</span>Contacto</a>
+  <a href="https://www.linkedin.com/in/melissa-benavides-230b8475/" target="_blank" rel="noopener"><span>in</span>LinkedIn ↗</a>
+  <a href="media/CV_Melissa_Benavides.pdf" download><span>CV</span>Descargar CV ↓</a>
 </nav>
 
 <main>
@@ -421,6 +447,13 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       </div>
       <hr class="rule">
       <h1 class="cond name">Melissa<span class="r">Benavides</span></h1>
+      <div class="hero-quick">
+        <p>Convierto presupuesto en crecimiento de marca. <span>15 años en P&amp;G, Tajín y spirits.</span></p>
+        <div class="hero-cta">
+          <a class="btn solid" href="https://wa.me/525535224455?text=Hola%20Melissa%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20platicar." target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+          <a class="btn line" href="#trabajo">Ver casos</a>
+        </div>
+      </div>
 
       <div class="collage" id="collage">
         <div class="drag st" style="left:0;top:0;transform:rotate(-5deg)">Estrategia</div>
@@ -433,19 +466,19 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
           <div class="main">
             <span class="mono">Admit one · 15 años de marketing</span>
             <div class="route">P&amp;G → Tajín → Propio</div>
-            <span class="mono">Red profesional en 40+ países</span>
+            <span class="mono">Experiencia en 3 países</span>
           </div>
           <div class="stub mono">Pase 001</div>
         </div>
         <div class="drag st dark" style="right:5%;bottom:0;transform:rotate(4deg)">IA aplicada</div>
       </div>
 
-      <div class="hero-cta">
+      <div class="hero-cta hero-cta-main">
         <a class="btn solid" href="#trabajo">Ver trabajo seleccionado <span aria-hidden="true">↗</span></a>
-        <a class="btn line" href="#contacto">Hablemos</a>
+        <a class="btn line" href="https://wa.me/525535224455?text=Hola%20Melissa%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20platicar." target="_blank" rel="noopener">Hablemos</a>
       </div>
       <div class="hero-foot">
-        <p class="mono">Arrastra las piezas<br>· Recorre el expediente</p>
+        <p class="mono"><span class="fine-only">Arrastra las piezas<br>· </span>Recorre el expediente</p>
         <div class="spin">
           <svg viewBox="0 0 132 132" aria-hidden="true"><defs><path id="circ" d="M66,66 m-54,0 a54,54 0 1,1 108,0 a54,54 0 1,1 -108,0"/></defs><text font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="3.2" fill="#0D1B2B"><textPath href="#circ">ESTRATEGIA CON INTENCIÓN ✳ DATOS ✳ MARCA ✳</textPath></text></svg>
           <a href="#sobre-mi" aria-label="Bajar a Sobre mí">↓</a>
@@ -456,6 +489,21 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       <span>Brand strategy</span><i>✳</i><span>Go-to-market</span><i>✳</i><span>Media planning</span><i>✳</i><span>IA aplicada</span><i>✳</i><span>Marketing para salud</span><i>✳</i><span>Liderazgo de equipos</span><i>✳</i><span>Impacto real</span><i>✳</i>
       <span>Brand strategy</span><i>✳</i><span>Go-to-market</span><i>✳</i><span>Media planning</span><i>✳</i><span>IA aplicada</span><i>✳</i><span>Marketing para salud</span><i>✳</i><span>Liderazgo de equipos</span><i>✳</i><span>Impacto real</span><i>✳</i>
     </div></div>
+  </section>
+
+  <!-- Cifras -->
+  <section class="dark cifras" id="cifras" aria-label="Resultados">
+    <div class="wrap">
+      <div class="fhead mono"><span>Resultados que respaldan el expediente</span></div>
+      <div class="stats">
+        <div><b>21 M</b><span>impactos · Tajín Dulce y YAYA</span></div>
+        <div><b>+75%</b><span>alcance con el mismo presupuesto · Tajín</span></div>
+        <div><b>+9pp</b><span>Top of Mind en 3 meses · Downy</span></div>
+        <div><b>40X</b><span>impactos y conversación · Always</span></div>
+        <div><b>+23%</b><span>ventas tras reposicionamiento · spirits</span></div>
+        <div><b>+20%</b><span>ventas en el primer año · Larios</span></div>
+      </div>
+    </div>
   </section>
 
   <!-- 02 SOBRE MÍ -->
@@ -481,7 +529,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       </div>
 
       <div class="facts">
-        <div><span class="mono">Hoy</span><p>CEO de XAMANS 360, Marketing Cliniq y Yournal</p></div>
+        <div><span class="mono">Hoy</span><p>Founder de XAMANS 360, Marketing Cliniq y Yournal</p></div>
         <div><span class="mono">Trayectoria</span><p>Head of Media Communication en Tajín · Media Communication &amp; Digital Manager en P&amp;G · Marketing Intelligence &amp; PR en España</p></div>
         <div><span class="mono">Antes</span><p>Maxxium · Nielsen · IMS Health</p></div>
         <div><span class="mono">También</span><p>Ponente en IA aplicada al marketing</p></div>
@@ -534,13 +582,13 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       <div class="file" style="padding-top:90px">
         <span class="mono" style="color:var(--text-muted)">Un poco más de mí</span>
         <div class="body" style="margin-top:16px">
-          <p>Además del marketing, me formé en psicología clínica. Me interesa cómo funcionan las personas por dentro, y eso se nota en cómo entiendo a cada consumidor.</p>
+          <p>Además del marketing, me apasiona la neurociencia: me interesa cómo funcionan las personas por dentro, y eso se nota en cómo entiendo a cada consumidor.</p>
+          <p>Me gusta conocer nuevas culturas y aprender de cada lugar y de su gente.</p>
         </div>
         <div class="chips">
-          <span style="--c:var(--ink)">Psicología</span>
+          <span style="--c:var(--ink)">Neurociencia</span>
           <span style="--c:#C8B88F">Wellness</span>
-          <span style="--c:#A88E7A">Astrología</span>
-          <span style="--c:#D9D3C8">Regulación del sistema nervioso</span>
+          <span style="--c:#D9D3C8">Liderazgo consciente</span>
         </div>
       </div>
 
@@ -621,14 +669,6 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       <div class="fhead mono"><span><b>04</b>Trabajo seleccionado</span><span class="aside">Casos de éxito</span></div>
       <h2 class="cond sel">Trabajo<br>seleccionado <sup>(12)</sup></h2>
 
-      <div class="stats">
-        <div><b>21 M</b><span>impactos · Tajín Dulce y YAYA</span></div>
-        <div><b>+75%</b><span>alcance con el mismo presupuesto · Tajín</span></div>
-        <div><b>+9pp</b><span>Top of Mind en 3 meses · Downy</span></div>
-        <div><b>40X</b><span>impactos y conversación · Always</span></div>
-        <div><b>+23%</b><span>ventas tras reposicionamiento · spirits</span></div>
-        <div><b>+20%</b><span>ventas en el primer año · Larios</span></div>
-      </div>
 
       <div class="folders" role="group" aria-label="Filtrar casos">
         <button class="folder" type="button" data-f="all" aria-pressed="true"><span class="f" aria-hidden="true"></span><span class="lb">Todos<sup>12</sup></span></button>
@@ -640,55 +680,55 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       </div>
 
       <div class="cases">
-        <article class="case" data-cat="taj">
+        <article class="case feat" data-cat="taj">
           <div class="cover c-taj ph"><img class="bgimg" src="media/tajin-dulce.jpg" alt="Campaña de Tajín Dulce"><span class="slug">tajin-dulce/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">21 M de impactos</div><div class="cs">Lanzamiento de Tajín Dulce y YAYA en el mercado mexicano.</div>
             <button class="view" type="button" data-case="0">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—01</div><div class="t mono">Lanzamiento · Campaña · Plan de medios</div><h3>Tajín Dulce y YAYA</h3><p>Head of Media Communication. Desarrollo de campaña y plan de medios para dos lanzamientos en México.</p></div>
         </article>
-        <article class="case" data-cat="taj">
+        <article class="case feat" data-cat="taj">
           <div class="cover c-tji ph"><span class="phones" aria-hidden="true"><img src="media/tajin-ig1.jpg" alt=""><img src="media/tajin-fb.jpg" alt=""><img src="media/tajin-ig2.jpg" alt=""></span><span class="slug">tajin-mundo/</span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">+75% de alcance</div><div class="cs">Llevando el ADN de México al mundo, con el mismo presupuesto.</div>
             <button class="view" type="button" data-case="1">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—02</div><div class="t mono">Medios internacionales · Digitalización</div><h3>Expansión internacional de Tajín</h3><p>Estrategia de medios diferenciada por madurez de mercado para escalar una marca con identidad local a otros países.</p></div>
         </article>
-        <article class="case" data-cat="pg">
+        <article class="case feat" data-cat="pg">
           <div class="cover c-dw ph"><img class="bgimg" src="media/downy-arena.jpg" alt="Evento de Downy en una arena"><span class="slug">downy/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">+9pp Top of Mind</div><div class="cs">Récord en los primeros 3 meses de lanzamiento.</div>
             <button class="view" type="button" data-case="2">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—03</div><div class="t mono">Multiplataforma · Eventos · Media digital</div><h3>Downy Blossom</h3><p>Media Communication &amp; Digital Manager. Estrategia multiplataforma y eventos, con +4.4pp de penetración de mercado.</p></div>
         </article>
-        <article class="case" data-cat="pg">
+        <article class="case extra" data-cat="pg">
           <div class="cover c-ar ph"><video class="bgimg" src="media/ariel-spot.mp4" poster="media/ariel-spot.jpg" autoplay muted loop playsinline aria-label="Spot de Ariel Revitacolor"></video><span class="slug">ariel/</span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">Lanzamiento en medios y eventos</div><div class="cs">Un lanzamiento que trajo crecimiento en ventas.</div>
             <button class="view" type="button" data-case="3">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—04</div><div class="t mono">Medios · Eventos · Lanzamiento</div><h3>Ariel Revitacolor</h3><p>Media Communication &amp; Digital Manager. Lanzamiento en diversos medios y eventos, con crecimiento en ventas.</p></div>
         </article>
-        <article class="case" data-cat="pg">
+        <article class="case feat" data-cat="pg">
           <div class="cover c-al"><span class="slug">always/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">40X conversación</div><div class="cs">Una marca en riesgo de descatalogación que volvió a crecer.</div>
             <button class="view" type="button" data-case="4">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—05</div><div class="t mono">PR · Propósito de marca · 2020</div><h3>Always</h3><p>Campaña con Save the Children para conectar con el mensaje core de la marca: empoderar a las niñas.</p></div>
         </article>
-        <article class="case" data-cat="sp">
+        <article class="case feat" data-cat="sp">
           <div class="cover c-la ph"><img class="bgimg" src="media/larios.jpg" alt="Larios Rosé"><span class="slug">larios/</span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">+20% en ventas</div><div class="cs">Campaña madre “Espíritu mediterráneo”, en su primer año.</div>
             <button class="view" type="button" data-case="5">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—06</div><div class="t mono">Validación de concepto · Campaña</div><h3>Larios</h3><p>Marketing Intelligence &amp; PR. Validación de concepto y campaña madre que transformó la marca.</p></div>
         </article>
-        <article class="case" data-cat="sp">
+        <article class="case extra" data-cat="sp">
           <div class="cover c-dyc ph"><img class="bgimg" src="media/dyc.jpg" alt="Campaña de DYC"><span class="slug">dyc/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">+9% brand image</div><div class="cs">Validación de concepto, campaña y nueva imagen.</div>
             <button class="view" type="button" data-case="6">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—07</div><div class="t mono">Concepto · Campaña · Imagen de marca</div><h3>DYC</h3><p>Marketing Intelligence &amp; PR. Nueva campaña e imagen que incrementó el brand image de la marca.</p></div>
         </article>
-        <article class="case" data-cat="sp">
+        <article class="case extra" data-cat="sp">
           <div class="cover c-sp ph"><img class="bgimg" src="media/larios-evento.jpg" alt="Evento de marca en España"><span class="slug">spirits-espana/</span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">+23% en ventas</div><div class="cs">Reposicionamiento de marcas de spirits en España.</div>
             <button class="view" type="button" data-case="7">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—08</div><div class="t mono">U&amp;A · Insight · PR · Research</div><h3>Inteligencia de marca</h3><p>Marketing Intelligence &amp; PR. Rediseño del U&amp;A e integración de PR, research y medios en un mismo sistema de decisión.</p></div>
         </article>
-        <article class="case" data-cat="pro">
+        <article class="case feat" data-cat="pro">
           <div class="cover c-xm"><span class="slug">xamans360.com/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
             <div class="xm-eye">XAMANS · Marketing estratégico con impacto real</div>
             <div class="xm-h">La estrategia que no hace crecer tu negocio <em>solo era teoría.</em></div>
@@ -696,7 +736,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
             <button class="view" type="button" data-case="8">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—09</div><div class="t mono">Consultoría · Marca · Datos · IA · En línea</div><h3>XAMANS 360</h3><p>Mi consultoría: el rigor de las multinacionales de consumo, con marca, datos e IA, para negocios en crecimiento. <a class="live" href="https://www.xamans360.com">xamans360.com ↗</a></p></div>
         </article>
-        <article class="case" data-cat="pro">
+        <article class="case extra" data-cat="pro">
           <div class="cover c-mc"><span class="slug">marketingcliniq.com/</span><span class="more" aria-hidden="true">•••</span>
             <div class="mc-mark">Marketing Cliniq</div>
             <div class="mc-lab">Diagnóstico · Protocolo · Tratamiento · Signos vitales</div>
@@ -704,21 +744,22 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
             <button class="view" type="button" data-case="9">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—10</div><div class="t mono">Marketing para salud · Protocolo en 4 fases · En línea</div><h3>Marketing Cliniq</h3><p>Diagnostico la marca, prescribo un protocolo y mido lo que produce. <a class="live" href="https://www.marketingcliniq.com">marketingcliniq.com ↗</a></p></div>
         </article>
-        <article class="case" data-cat="pro">
+        <article class="case extra" data-cat="pro">
           <div class="cover c-yo"><span class="slug">yournal/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
             <div class="yo-pill">En desarrollo</div>
             <div class="yo-name">Yournal</div>
             <div class="yo-h">La clínica no termina <em>en la sesión.</em></div>
             <button class="view" type="button" data-case="10">Ver caso <span aria-hidden="true">↗</span></button></div>
-          <div class="cmeta"><div class="p">P—11</div><div class="t mono">Producto · En desarrollo · 2026</div><h3>Yournal</h3><p>App que busca reducir el tiempo de diagnóstico en pacientes de terapia psicológica. Fundadora y CEO.</p></div>
+          <div class="cmeta"><div class="p">P—11</div><div class="t mono">Producto · En desarrollo · 2026</div><h3>Yournal</h3><p>App que busca reducir el tiempo de diagnóstico en pacientes de terapia psicológica. Founder.</p></div>
         </article>
-        <article class="case" data-cat="doc">
+        <article class="case extra" data-cat="doc">
           <div class="cover c-an"><span class="slug">anahuac/</span><span class="more" aria-hidden="true">•••</span>
             <div class="ct">IA en la industria</div><div class="cs">Módulo 5 del Diplomado en IA para Creativos.</div>
             <button class="view" type="button" data-case="11">Ver caso <span aria-hidden="true">↗</span></button></div>
           <div class="cmeta"><div class="p">P—12</div><div class="t mono">Ponencia · 9 horas · 2026</div><h3>Universidad Anáhuac × Grupo Most</h3><p>Aplicaciones de la IA en la industria para el marketing, con casos reales de marcas globales.</p></div>
         </article>
       </div>
+      <div class="more-wrap"><button class="btn line more-cases" type="button" id="more-cases">Ver los 12 casos <span aria-hidden="true">↓</span></button></div>
     </div>
   </section>
 
@@ -750,7 +791,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
         <div><span class="mono">México · Francia</span><h3 class="cond">U-ERRE · ESC Rennes</h3><p>Licenciatura en la Universidad Regiomontana con programa en ESC Rennes.</p></div>
         <div><span class="mono">España</span><h3 class="cond">Founderz × Microsoft</h3><p>Professional Master in AI &amp; Innovation.</p></div>
       </div>
-      <div class="certs"><span>P&amp;G Manager of Others</span><span>P&amp;G Strategic Brand Management College</span><span>P&amp;G One-Page Memo</span><span>Psicología clínica</span></div>
+      <div class="certs"><span>P&amp;G Manager of Others</span><span>P&amp;G Strategic Brand Management College</span><span>P&amp;G One-Page Memo</span></div>
     </div>
   </section>
 
@@ -763,13 +804,17 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
       <p class="lead">¿Tienes una marca, una clínica o un equipo que necesita una estratega con visión de negocio? <span>Lo siguiente bueno empieza con una conversación.</span></p>
       <div class="call">
         <div class="av"><img src="media/avatar3.jpg" alt="Melissa Benavides"></div>
-        <div class="who"><b>Melissa Benavides</b><span>Correo · Monterrey</span></div>
+        <div class="who"><b>Melissa Benavides</b><span>WhatsApp · Correo</span></div>
         <button class="b copy" type="button" id="copy" aria-label="Copiar correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+        <a class="b wa" href="https://wa.me/525535224455?text=Hola%20Melissa%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20platicar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg></a>
         <a class="b mail" href="mailto:mbenavides@xamans360.com" aria-label="Escribir correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
       </div>
       <p id="copied" aria-live="polite"></p>
       <div class="lines">
+        <div><span class="mono">WhatsApp</span><a href="https://wa.me/525535224455?text=Hola%20Melissa%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20platicar." target="_blank" rel="noopener">+52 55 3522 4455</a></div>
         <div><span class="mono">Correo</span><a href="mailto:mbenavides@xamans360.com">mbenavides@xamans360.com</a></div>
+        <div><span class="mono">CV</span><a href="media/CV_Melissa_Benavides.pdf" download>Descargar CV (PDF) ↓</a></div>
+        <div><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/melissa-benavides-230b8475/" target="_blank" rel="noopener">Melissa Benavides</a></div>
         <div><span class="mono">Sitios</span><a href="https://xamans360.com">xamans360.com</a><br><a href="https://marketingcliniq.com">marketingcliniq.com</a></div>
         <div><span class="mono">Base</span><p>Monterrey y Tulum, México</p></div>
       </div>
@@ -793,7 +838,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
 </div>
 
 <!-- Notificación -->
-<div class="toast" id="toast" role="status">
+<div class="toast gone" id="toast" role="status">
   <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
   <div style="flex:1">
     <div class="hd mono"><span>Mensajes</span><span>Ahora <button class="xb" type="button" id="toast-x" aria-label="Cerrar notificación">✕</button></span></div>
@@ -804,13 +849,13 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
 
 <!-- Dock -->
 <nav class="dock" aria-label="Accesos rápidos">
-  <a href="#sobre-mi" data-s="sobre-mi" aria-label="Sobre mí"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
-  <a href="#que-hago" data-s="que-hago" class="k1" aria-label="Qué hago"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></a>
-  <a href="#trabajo" data-s="trabajo" class="k2" aria-label="Trabajo seleccionado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
-  <a href="#inicio" data-s="inicio" class="cal" aria-label="Portada"><span class="m" id="cal-m">NOV</span><span class="d" id="cal-d">16</span></a>
-  <a href="#formacion" data-s="formacion" aria-label="Formación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></a>
-  <a href="#docencia" data-s="docencia" class="k3" aria-label="Docencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg></a>
-  <a href="#contacto" data-s="contacto" class="k4" aria-label="Contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+  <a href="#inicio" data-s="inicio" aria-label="Portada"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg><i class="dl">Inicio</i></a>
+  <a href="#sobre-mi" data-s="sobre-mi" aria-label="Sobre mí"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><i class="dl">Perfil</i></a>
+  <a href="#que-hago" data-s="que-hago" class="k1" aria-label="Qué hago"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg><i class="dl">Servicios</i></a>
+  <a href="#trabajo" data-s="trabajo" class="k2" aria-label="Trabajo seleccionado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><i class="dl">Casos</i></a>
+  <a href="#docencia" data-s="docencia" class="k3" aria-label="Docencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg><i class="dl">Clases</i></a>
+  <a href="#formacion" data-s="formacion" aria-label="Formación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><i class="dl">Estudios</i></a>
+  <a href="#contacto" data-s="contacto" class="k4" aria-label="Contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg><i class="dl">Contacto</i></a>
 </nav>
 
 <script>
@@ -818,8 +863,6 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
   var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
 
   /* Fecha del dock */
-  var M=["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"],now=new Date();
-  $("#cal-m").textContent=M[now.getMonth()];$("#cal-d").textContent=now.getDate();
 
   /* Menú */
   var menu=$("#menu"),ob=$("#open-menu"),cb=$("#close-menu");
@@ -829,19 +872,21 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
   $$("a",menu).forEach(function(a){a.addEventListener("click",function(){setMenu(false)})});
 
   /* Progreso, secciones oscuras y dock activo */
-  var darks=$$("#trabajo,#contacto"),secs=$$("main > section[id]"),dockLinks=$$(".dock a");
+  var darks=$$("#trabajo,#contacto,#cifras"),secs=$$("main > section[id]"),dockLinks=$$(".dock a");
   function onScroll(){
     var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
     $("#progress").style.width=(max>0?h.scrollTop/max*100:0)+"%";
     var y=60,onDark=darks.some(function(d){var r=d.getBoundingClientRect();return r.top<y&&r.bottom>y});
     document.body.classList.toggle("on-dark",onDark);
+    document.body.classList.toggle("past-hero",h.scrollTop>window.innerHeight*.8);
     var cur="inicio";secs.forEach(function(s){if(s.getBoundingClientRect().top<window.innerHeight*.4)cur=s.id});
     dockLinks.forEach(function(a){a.classList.toggle("cur",a.dataset.s===cur)});
   }
   window.addEventListener("scroll",onScroll,{passive:true});onScroll();
 
   /* Piezas arrastrables */
-  $$(".drag").forEach(function(el){
+  var coarse=window.matchMedia&&matchMedia("(pointer:coarse)").matches;
+  if(!coarse)$$(".drag").forEach(function(el){
     var sx,sy,ox,oy,active=false,base=el.style.transform||"";
     el.addEventListener("pointerdown",function(e){active=true;sx=e.clientX;sy=e.clientY;ox=+(el.dataset.x||0);oy=+(el.dataset.y||0);el.classList.add("dragging");try{el.setPointerCapture(e.pointerId)}catch(_){}} );
     el.addEventListener("pointermove",function(e){if(!active)return;var x=ox+e.clientX-sx,y=oy+e.clientY-sy;el.dataset.x=x;el.dataset.y=y;el.style.transform="translate("+x+"px,"+y+"px) "+base;});
@@ -872,10 +917,13 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
   })});
 
   /* Filtros de carpetas */
-  var fb=$$(".folder"),cases=$$(".case");
+  var fb=$$(".folder"),cases=$$(".case"),showAll=false,mw=$(".more-wrap");
+  cases.forEach(function(c){c.hidden=!c.classList.contains("feat")});
+  $("#more-cases").addEventListener("click",function(){showAll=true;cases.forEach(function(c){c.hidden=false});mw.hidden=true;});
   fb.forEach(function(b){b.addEventListener("click",function(){
     fb.forEach(function(x){x.setAttribute("aria-pressed","false")});b.setAttribute("aria-pressed","true");
-    var f=b.dataset.f;cases.forEach(function(c){c.hidden=!(f==="all"||c.dataset.cat===f)});
+    var f=b.dataset.f;cases.forEach(function(c){c.hidden=!(f==="all"?(showAll||c.classList.contains("feat")):c.dataset.cat===f)});
+    mw.hidden=(f!=="all"||showAll);
   })});
 
   /* Panel de caso */
@@ -890,7 +938,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
     ["P—08 · Marketing Intelligence & PR","Inteligencia de marca y reposicionamiento","Elevar la relevancia cultural de marcas de spirits en España a partir de insight local y lectura de tendencias.",["Rediseño del U&A para capturar nuevas motivaciones","Plataforma de insight para innovación y comunicación","Integración de PR, research y medios en un mismo sistema de decisión","+23% en ventas tras el nuevo U&A y reposicionamiento","+5pp en Brand Power contra el año anterior"]],
     ["P—09 · Consultoría · En línea","XAMANS 360","Consultoría de marketing estratégico que lleva el rigor de las multinacionales de consumo a negocios en crecimiento, con marca, datos e inteligencia artificial.",["Cuatro frentes: estrategia de marca y posicionamiento, inteligencia de datos, IA aplicada a la operación e investigación de mercados","Proceso: diagnóstico, arquitectura e implementación con transferencia al equipo","El Estratega Aumentado: programa in-company de IA aplicada al marketing, 3 sesiones y 9 horas","Vertical XAMANS Med: “Nadie te enseñó que tu consultorio es una empresa.”"],"https://www.xamans360.com"],
     ["P—10 · Marketing para salud · En línea","Marketing Cliniq","“Diagnostico tu marca, prescribo un protocolo y mido lo que produce.”",["Protocolo en cuatro fases: Diagnóstico de Marca, Protocolo Estratégico, Tratamiento de Posicionamiento y Signos Vitales del Negocio","Para consultorios, clínicas y prácticas privadas en Monterrey, Ciudad de México y en remoto","Identidad propia: una Q dorada atravesada por una hélice de ADN"],"https://www.marketingcliniq.com"],
-    ["P—11 · Producto · En desarrollo","Yournal","App que busca reducir el tiempo de diagnóstico en pacientes de terapia psicológica.",["Fundadora y CEO","Principio de marca: la clínica no termina en la sesión","Producto construido con herramientas de IA, de la estrategia al código"]],
+    ["P—11 · Producto · En desarrollo","Yournal","App que busca reducir el tiempo de diagnóstico en pacientes de terapia psicológica.",["Founder","Principio de marca: la clínica no termina en la sesión","Producto construido con herramientas de IA, de la estrategia al código"]],
     ["P—12 · Ponencia · 2026","Universidad Anáhuac × Grupo Most","Módulo 5 del Diplomado en IA para Creativos: Aplicaciones de la IA en la industria para el marketing.",["3 sesiones de 3 horas, junio y julio de 2026","Casos reales de marcas globales, con cada dato verificado","Simulaciones en equipo y prompts para Claude y Perplexity"]]
   ];
   var imgs=["media/yaya.jpg","media/tajin-fb.jpg","media/downy-playera.jpg","media/ariel-revista.jpg","","media/larios.jpg","media/dyc.jpg","media/larios-evento.jpg","","","",""];
@@ -912,7 +960,7 @@ body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border
   /* Notificación */
   var toast=$("#toast");
   $("#toast-x").addEventListener("click",function(){toast.classList.add("gone")});
-  setTimeout(function(){toast.classList.add("gone")},9000);
+  if(window.matchMedia&&matchMedia("(min-width:900px)").matches){setTimeout(function(){toast.classList.remove("gone")},2500);setTimeout(function(){toast.classList.add("gone")},11000);}
 
   /* Copiar correo */
   var msg=$("#copied");
