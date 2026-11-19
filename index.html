@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melissa Benavides · Portafolio</title>
+<meta name="description" content="Nora Melissa Benavides Esparza — estratega de marketing y líder de equipos en FMCG. 15 años en P&G, Tajín, Nielsen, Maxxium e IMS Health. Fundadora de XAMANS 360, Marketing Cliniq y Yournal.">
+<link rel="canonical" href="https://melissa.xamans360.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://melissa.xamans360.com/">
+<meta property="og:title" content="Melissa Benavides · Estratega de marketing">
+<meta property="og:description" content="15 años en P&amp;G, Tajín y marcas de spirits en España. Fundadora de XAMANS 360, Marketing Cliniq y Yournal.">
+<meta property="og:image" content="https://melissa.xamans360.com/media/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0D1B2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600;700&family=Caveat:wght@600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Jost:wght@400&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: expediente en papel cuadriculado — archivos numerados 01–07, titulares condensados, stickers arrastrables, objetos de interfaz (notificación, iMessage, carpetas, llamada) y un dock fijo como navegación */
+:root{
+  --paper:#ECE7DE;
+  --paper-hi:#F5F1EA;
+  --grid:rgba(30,27,24,.075);
+  --ink:#1D1B19;
+  --muted:#6E675F;
+  --sand:#D6C6A5;
+  --stone:#5E5851;
+  --display:"Archivo","Arial Narrow",Impact,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --hand:"Caveat","Bradley Hand",cursive;
+  --text:#0D1B2B;
+  --text-muted:#46536A;
+  --accent-text:#6A5734;
+  --on-dark:#F2EDE3;
+  --dark-muted:#C9BFA9;
+  --oro-claro:#D9C08A;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html{overflow-x:clip}
+body{margin:0;color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;background:var(--paper);overflow-x:hidden}
+.gridbg{background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:48px 48px}
+a{color:inherit}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+h1,h2,h3,p,figure,blockquote{margin:0}
+button{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.mono{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.cond{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.01em}
+.ital{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-variation-settings:normal}
+.hand{font-family:var(--hand);font-weight:700}
+.hl{background:linear-gradient(transparent 58%,var(--sand) 58%,var(--sand) 92%,transparent 92%)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Paleta tipográfica de marca: tinta, bronce y oro */
+.fhead{color:var(--accent-text)}
+.ital{color:var(--accent-text)}
+.hand{color:var(--accent-text)}
+.dark .fhead,.final .fhead,.dark .ital,.final .ital,.final .hand{color:var(--oro-claro)}
+.dark .fhead .aside,.final .fhead .mono{color:var(--dark-muted)}
+.final .fhead b{color:var(--oro-claro)}
+.cover.ph .ital,.cover .ct,.cover .cs{color:inherit}
+/* Progreso + barra superior */
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--ink);z-index:40}
+.topbar{position:fixed;top:14px;left:0;right:0;z-index:25;pointer-events:none}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center}
+.badge{pointer-events:auto;width:62px;height:62px;border-radius:50%;background:var(--ink);color:var(--on-dark);display:grid;place-items:center;text-decoration:none;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:1.45rem;box-shadow:0 0 0 2px var(--paper-hi);transition:background .25s,color .25s}
+.menu-btn{pointer-events:auto;font-family:var(--mono);font-size:.85rem;letter-spacing:.16em;background:rgba(245,241,234,.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid #CFC8BC;border-radius:999px;padding:16px 26px;cursor:pointer;transition:background .25s,color .25s}
+body.on-dark .badge{background:var(--paper-hi);color:var(--text)}
+body.on-dark .menu-btn{background:rgba(94,88,81,.85);color:var(--on-dark);border-color:#6E675F}
+.menu{position:fixed;inset:0;z-index:50;background:var(--ink);color:var(--on-dark);display:none;flex-direction:column;justify-content:center;gap:4px;padding:clamp(24px,6vw,72px)}
+.menu.open{display:flex}
+.menu a{text-decoration:none;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,9vw,5.4rem);line-height:1.02;display:flex;gap:18px;align-items:baseline}
+.menu a span{font-family:var(--mono);font-size:.85rem;font-weight:400;color:var(--dark-muted)}
+.menu a:hover{color:var(--oro-claro)}
+.menu .close{position:absolute;top:14px;right:clamp(18px,4vw,48px);background:transparent;color:var(--on-dark);border-color:#4A4540}
+
+/* 01 Portada */
+.hero{padding:104px 0 40px}
+.meta{display:grid;gap:10px}
+.meta .row{display:flex;gap:30px;flex-wrap:wrap}
+.dot::before{content:"";display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--ink);margin-right:12px;vertical-align:-1px}
+.rule{border:0;border-top:2px solid var(--ink);margin:26px 0 18px}
+.name{font-size:clamp(4rem,17.5vw,12.5rem)}
+.name .r{display:block;text-align:right}
+.collage{position:relative;height:clamp(560px,70vw,700px);margin-top:10px;touch-action:pan-y}
+.drag{position:absolute;cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none}
+.drag.dragging{cursor:grabbing;z-index:9;filter:drop-shadow(0 18px 24px rgba(0,0,0,.18))}
+.st{z-index:2;background:var(--paper-hi);border:3px solid var(--ink);box-shadow:0 10px 24px rgba(0,0,0,.12);font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;padding:12px 26px;font-size:clamp(1.6rem,4.4vw,2.6rem);line-height:1}
+.pin{width:min(52%,400px);background:var(--paper-hi);padding:22px 18px 22px;box-shadow:0 18px 40px rgba(0,0,0,.14)}
+.pin::before{content:"";position:absolute;top:-24px;left:50%;width:44px;height:34px;margin-left:-22px;border-radius:50% 50% 42% 42%;background:radial-gradient(circle at 40% 35%,#F7F2E8,#CBC1B0);box-shadow:0 6px 10px rgba(0,0,0,.18)}
+.pin::after{content:"";position:absolute;top:8px;left:50%;width:2px;height:16px;background:#8D857A}
+.pin-photo{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.05);pointer-events:none}
+.pin .mb{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:clamp(5rem,14vw,8.5rem);line-height:.8}
+.pin blockquote{margin-top:20px;font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.5vw,1.8rem);line-height:1.15}
+.pin .mono{display:block;margin-top:16px;color:var(--text-muted);font-size:.68rem}
+.tk{width:min(58%,430px);background:var(--paper-hi);border:2px solid var(--ink);display:grid;grid-template-columns:1fr auto;box-shadow:0 12px 28px rgba(0,0,0,.12)}
+.tk .main{padding:14px 18px;border-right:2px dashed var(--ink)}
+.tk .stub{padding:14px 12px;writing-mode:vertical-rl;text-align:center}
+.tk .route{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:clamp(1.7rem,4.4vw,2.6rem);line-height:1;margin:6px 0}
+.tk .mono{font-size:.66rem}
+.st.dark{background:var(--ink);color:var(--on-dark);font-size:clamp(1.15rem,3vw,1.6rem);padding:10px 20px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:14px;border-radius:999px;padding:18px 28px;font-family:var(--mono);font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:2px solid var(--ink)}
+.btn.solid{background:var(--ink);color:var(--on-dark)}
+.btn.line{background:transparent}
+.btn:hover{transform:translateY(-2px)}
+.hero-foot{display:flex;justify-content:space-between;align-items:end;margin-top:28px;gap:20px}
+.hero-foot .mono{color:var(--text-muted);font-size:.72rem;line-height:1.8}
+.spin{position:relative;width:132px;height:132px;flex:none}
+.spin svg{position:absolute;inset:0;animation:rot 18s linear infinite}
+.spin a{position:absolute;inset:30px;border-radius:50%;background:var(--ink);color:var(--on-dark);display:grid;place-items:center;text-decoration:none;font-size:1.6rem}
+@keyframes rot{to{transform:rotate(360deg)}}
+@media (max-width:640px){
+  .collage{height:720px}
+  .pin{width:80%}
+  .tk{width:92%}
+}
+
+/* Marquee */
+.marquee{margin:30px -2vw 0;background:var(--sand);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(-1.5deg);overflow:hidden;white-space:nowrap}
+.marquee .track{display:inline-flex;gap:34px;padding:14px 0;animation:mq 32s linear infinite}
+.marquee span{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1}
+.marquee i{font-style:normal;font-size:2rem;line-height:1}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* Encabezados de archivo */
+.file{padding:clamp(80px,11vw,130px) 0 0}
+.fhead{display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid #BDB5A8;padding-bottom:14px;margin-bottom:30px}
+.fhead .mono b{font-weight:500;margin-right:16px}
+.fhead .aside{color:var(--text-muted)}
+.big{font-size:clamp(3rem,10vw,7.2rem)}
+.lead{font-size:clamp(1.2rem,2.3vw,1.6rem);line-height:1.35;max-width:36ch}
+.body{max-width:60ch;color:var(--text);font-size:1.06rem}
+.body p+p{margin-top:16px}
+
+/* 02 Sobre mí */
+.polaroid{position:relative;background:var(--paper-hi);padding:20px 20px 70px;box-shadow:0 18px 40px rgba(0,0,0,.14);transform:rotate(-2deg);max-width:440px;margin:10px auto 40px}
+.polaroid::before,.polaroid::after{content:"";position:absolute;top:-16px;width:110px;height:32px;background:rgba(214,198,165,.85)}
+.polaroid::before{left:24px;transform:rotate(-6deg)}
+.polaroid::after{right:24px;transform:rotate(5deg)}
+.polaroid .frame{aspect-ratio:4/5;background:linear-gradient(160deg,#E4E0D8,#CFC9BE);display:grid;place-items:center;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:clamp(7rem,30vw,12rem);color:var(--text);line-height:.8}
+.polaroid .frame img{width:100%;height:100%;object-fit:cover;display:block}
+.polaroid .cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-family:var(--hand);font-size:2.4rem}
+.soy{font-size:clamp(3.4rem,12vw,7rem);display:flex;flex-wrap:wrap;align-items:baseline;gap:.2em;margin-bottom:24px}
+.soy .ital{font-size:1.1em}
+.tickets{display:flex;flex-wrap:wrap;gap:14px;margin:36px 0 10px}
+.ticket{--r:-1.5deg;position:relative;display:flex;align-items:center;gap:14px;background:var(--sand);border:1px solid #B7A784;padding:14px 26px 14px 18px;transform:rotate(var(--r));font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;font-size:clamp(1.5rem,4vw,2.2rem);line-height:1;-webkit-mask:radial-gradient(circle 9px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat}
+.ticket:nth-child(even){--r:1.2deg}
+.ticket small{font-family:var(--mono);font-size:.62rem;font-weight:400;letter-spacing:.1em;writing-mode:vertical-rl;transform:rotate(180deg);border-left:1px dashed var(--ink);padding-left:8px}
+.facts{border-top:2px solid var(--ink);margin-top:34px}
+.facts div{padding:20px 0;border-bottom:1px solid #BDB5A8}
+.facts .mono{color:var(--text-muted);font-size:.72rem}
+.facts p{font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:600;line-height:1.3;margin-top:6px}
+
+/* Cómo pienso */
+.think h3{font-size:clamp(2.6rem,8vw,5.6rem);margin:18px 0 26px;max-width:14ch}
+.modes{display:grid;gap:12px;margin-top:22px}
+.mode{display:flex;align-items:center;gap:18px;width:100%;text-align:left;border:0;border-radius:999px;background:var(--ink);color:var(--on-dark);padding:12px 26px 12px 12px;cursor:pointer;font-size:clamp(1.1rem,2.6vw,1.45rem);font-weight:700;transition:background .2s,color .2s}
+.mode .ic{width:62px;height:62px;flex:none;border-radius:50%;background:#3B3733;display:grid;place-items:center}
+.mode .ic svg{width:26px;height:26px}
+.mode .on{margin-left:auto;font-family:var(--mono);font-size:.75rem;font-weight:400;letter-spacing:.14em;opacity:0}
+.mode[aria-pressed="true"]{background:var(--paper-hi);color:var(--text);box-shadow:0 12px 28px rgba(0,0,0,.12)}
+.mode[aria-pressed="true"] .ic{background:var(--ink);color:var(--on-dark)}
+.mode[aria-pressed="true"] .on{opacity:1}
+.mode-card{position:relative;margin-top:26px;background:var(--paper-hi);padding:40px clamp(20px,4vw,40px) 36px;box-shadow:0 10px 30px rgba(0,0,0,.08);overflow:hidden}
+.mode-card::before{content:"";position:absolute;top:-8px;left:50%;margin-left:-80px;width:160px;height:40px;background:rgba(214,198,165,.9)}
+.mode-card h4{margin:12px 0 14px;font-size:clamp(2.2rem,6vw,3.6rem)}
+.mode-card p{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:46ch;position:relative}
+.mode-card .rings{position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;border-radius:50%;border:26px solid rgba(214,198,165,.35);pointer-events:none}
+
+/* iMessage */
+.imsg{margin:60px auto 0;max-width:560px;background:var(--paper-hi);border-radius:34px;padding:26px 26px 22px;box-shadow:0 16px 40px rgba(0,0,0,.1);text-align:center}
+.av img{width:100%;height:100%;object-fit:cover;border-radius:50%;transform:scale(1.08);filter:grayscale(1) contrast(1.05)}
+.imsg .av{width:68px;height:68px;margin:0 auto;border-radius:50%;overflow:hidden;background:var(--ink);color:var(--on-dark);display:grid;place-items:center;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:1.6rem}
+.imsg .nm{font-weight:700;font-size:1.25rem;margin-top:8px}
+.imsg .via{color:var(--text-muted);font-size:.7rem}
+.imsg hr{border:0;border-top:1px solid #CFC8BC;margin:18px 0}
+.bubble{text-align:left;background:#D5D0C8;border-radius:24px;padding:16px 22px;font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.8vw,1.65rem);line-height:1.18;max-width:92%;position:relative}
+.bubble .react{position:absolute;top:-16px;right:-12px;background:var(--ink);color:var(--on-dark);border-radius:999px;padding:4px 10px;font-family:var(--body);font-style:normal;font-size:.9rem;font-weight:700;display:none}
+.bubble .react.show{display:block}
+.typing{display:inline-flex;gap:6px;background:#D5D0C8;border-radius:24px;padding:14px 18px}
+.typing i{width:9px;height:9px;border-radius:50%;background:#8D857A;animation:blink 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.35}40%{opacity:1}}
+.tap{color:var(--text-muted);font-size:.72rem;margin:16px 0 10px}
+.reacts{display:flex;justify-content:space-around;background:#EDE8E0;border-radius:999px;padding:10px 6px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+.reacts button{background:none;border:0;cursor:pointer;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:1.3rem;color:var(--text-muted)}
+.reacts button svg{width:24px;height:24px}
+.reacts button[aria-pressed="true"]{background:var(--ink);color:var(--on-dark)}
+
+/* Un poco más */
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.chips span{display:inline-flex;align-items:center;gap:12px;background:var(--paper-hi);border:1px solid #D3CCC0;border-radius:999px;padding:14px 24px;font-weight:700;font-size:1.15rem;box-shadow:0 6px 14px rgba(0,0,0,.05)}
+.chips span::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--c,var(--ink))}
+.sign{margin-top:70px;text-align:center}
+.sign p{font-size:clamp(1.25rem,2.6vw,1.6rem);max-width:30ch;margin:0 auto 18px}
+.sign .hand{font-size:clamp(2.6rem,7vw,4rem);line-height:1;transform:rotate(-3deg);display:inline-block}
+
+.lens{margin-top:80px}
+.lens-t{font-size:clamp(2.2rem,6vw,3.2rem);color:var(--accent-text);transform:rotate(-2deg);display:inline-block}
+.strip{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 6px 30px;margin:0 -6px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.pol{flex:none;width:min(62vw,280px);background:var(--paper-hi);padding:12px 12px 0;box-shadow:0 14px 30px rgba(0,0,0,.14);transform:rotate(var(--r));scroll-snap-align:center}
+.pol img,.pol video{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;background:#D5D0C8}
+.pol figcaption{text-align:center;font-size:1.7rem;padding:8px 0 10px;line-height:1.1}
+/* Desgarro hacia papel liso */
+.tear{height:34px;margin-top:80px;background:var(--paper-hi);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 34' preserveAspectRatio='none'%3E%3Cpath d='M0 18 L6 10 L11 16 L17 6 L23 14 L29 9 L34 17 L41 7 L47 15 L52 10 L58 18 L64 8 L70 14 L76 6 L82 16 L88 11 L94 17 L100 8 L106 15 L113 9 L120 16 L120 34 L0 34Z'/%3E%3C/svg%3E") 0 0/240px 100% repeat-x;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 34' preserveAspectRatio='none'%3E%3Cpath d='M0 18 L6 10 L11 16 L17 6 L23 14 L29 9 L34 17 L41 7 L47 15 L52 10 L58 18 L64 8 L70 14 L76 6 L82 16 L88 11 L94 17 L100 8 L106 15 L113 9 L120 16 L120 34 L0 34Z'/%3E%3C/svg%3E") 0 0/240px 100% repeat-x}
+.plain{background:var(--paper-hi);padding-bottom:110px}
+.plain .file{padding-top:60px}
+
+/* 03 Qué hago */
+.ways{font-size:clamp(3rem,10.5vw,7rem)}
+.ways .ital{font-size:1.08em}
+.disc{border:2px solid var(--ink);margin-top:40px}
+.dcard{padding:clamp(22px,4vw,40px);position:relative;transition:background .2s}
+.dcard+.dcard{border-top:2px solid var(--ink)}
+.dcard:hover,.dcard:focus-within{background:#EDE8DF}
+.dcard .top{display:flex;justify-content:space-between;align-items:start}
+.dcard .circ{width:84px;height:84px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center}
+.dcard .circ svg{width:32px;height:32px}
+.dcard h3{font-size:clamp(3rem,10vw,6rem);margin:30px 0 14px}
+.dcard p{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:44ch}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tags span{border:2px solid var(--ink);border-radius:999px;padding:9px 16px;font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}
+.frames{margin-top:44px;border:2px dashed var(--ink);padding:24px clamp(16px,3vw,32px) 30px}
+.frames .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 12px;margin-top:22px}
+.app{text-align:center}
+.app b{display:grid;place-items:center;width:84px;height:84px;margin:0 auto 10px;border-radius:22px;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:1.9rem;box-shadow:0 8px 16px rgba(0,0,0,.12),inset 0 -3px 0 rgba(0,0,0,.08)}
+.app span{font-size:.92rem;line-height:1.25;display:block}
+.a1 b{background:var(--ink);color:var(--on-dark)}.a2 b{background:#FBF8F2}.a3 b{background:var(--sand)}.a4 b{background:#3B3733;color:var(--on-dark)}.a5 b{background:#E2DBCF}
+@media (max-width:640px){.frames .grid{grid-template-columns:repeat(3,1fr)}.app b{width:70px;height:70px;font-size:1.6rem;border-radius:18px}}
+
+/* 04 Trabajo seleccionado */
+.dark{background:var(--ink);color:var(--on-dark);padding:clamp(100px,12vw,140px) 0 120px}
+.dark .fhead{border-color:#4A4540}
+.dark .fhead .aside{color:var(--dark-muted)}
+.sel{font-size:clamp(3rem,11vw,8rem)}
+.sel sup{font-family:var(--mono);font-size:.22em;font-weight:500;vertical-align:top;letter-spacing:.06em}
+.folders{display:flex;flex-wrap:wrap;gap:8px 18px;margin:44px 0 50px}
+.folder{background:none;border:0;cursor:pointer;padding:14px 16px;border-radius:18px;color:var(--on-dark);text-align:center}
+.folder .f{display:block;width:118px;height:84px;margin:0 auto 12px;position:relative}
+.folder .f::before{content:"";position:absolute;left:0;top:0;width:44%;height:22%;background:#B9A986;border-radius:8px 8px 0 0}
+.folder .f::after{content:"";position:absolute;left:0;right:0;top:14%;bottom:0;background:var(--sand);border-radius:6px 10px 10px 10px;box-shadow:inset 0 2px 0 rgba(255,255,255,.4)}
+.folder .lb{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.folder .lb sup{font-size:.7em;margin-left:4px}
+.folder[aria-pressed="true"]{background:#33302C}
+.cases{display:grid;gap:70px}
+.case[hidden]{display:none}
+.cover{position:relative;border-radius:4px;overflow:hidden;min-height:clamp(400px,56vw,560px);padding:96px clamp(20px,4vw,40px) 100px;display:flex;flex-direction:column;justify-content:flex-end}
+.cover .slug{position:absolute;top:18px;left:18px;background:rgba(245,241,234,.9);color:var(--text);border-radius:12px;padding:8px 14px;font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.cover .clip{position:absolute;top:-10px;right:58px;width:26px;height:70px;border:3px solid #B8B1A6;border-radius:14px;border-bottom-color:transparent}
+.cover .more{position:absolute;top:18px;right:18px;width:54px;height:54px;border-radius:50%;background:rgba(245,241,234,.92);color:var(--text);display:grid;place-items:center;font-size:1.3rem;letter-spacing:2px;font-weight:700}
+.cover .ct{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;line-height:.88;font-size:clamp(2.4rem,8vw,5rem);max-width:12ch}
+.cover .cs{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.6rem);margin-top:10px;max-width:30ch}
+.cover .view{position:absolute;right:18px;bottom:18px;background:var(--paper-hi);color:var(--text);border:0;border-radius:999px;padding:16px 24px;font-family:var(--mono);font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;display:flex;gap:12px;align-items:center;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.c-taj{background:#B8322E;color:#FBEFD9}
+.cover .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.cover.ph{color:#fff}
+.cover.ph::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.35) 40%,rgba(0,0,0,.85) 100%)}
+.cover .ct,.cover .cs{position:relative;z-index:2}
+.cover .slug,.cover .more,.cover .view,.cover .clip{z-index:3}
+.phones{position:absolute;inset:0;z-index:0;display:flex;justify-content:center;align-items:flex-start;gap:10px;padding:70px 16px 0}
+.phones img{width:26%;max-width:150px;border-radius:14px;box-shadow:0 12px 26px rgba(0,0,0,.35)}
+.phones img:nth-child(1){transform:rotate(-5deg) translateY(16px)}.phones img:nth-child(3){transform:rotate(5deg) translateY(16px)}
+.c-tji{background:#1F5E3A;color:#F6E7C1}
+.c-dw{background:#4E3A84;color:#F1E9FB}
+.c-ar{background:#1B4FA0;color:#F4F7FF}
+.c-al{background:#9CC3EC;color:#14264D}
+.c-la{background:#E7AAB6;color:#3A1520}
+.c-dyc{background:#6B2A1E;color:#F3DDB8}
+.c-sp{background:#2F4A3A;color:#E9E2CC}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--paper-hi);margin-top:40px}
+.stats div{padding:20px 14px 18px 0;border-bottom:1px solid #4A4540}
+.stats div:not(:nth-child(3n+1)){padding-left:14px;border-left:1px solid #4A4540}
+.stats b{display:block;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:clamp(2.6rem,7vw,4.6rem);line-height:.9;color:var(--oro-claro)}
+.stats span{display:block;margin-top:8px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.stats div:not(:nth-child(3n+1)){padding-left:0;border-left:0}.stats div:nth-child(even){padding-left:14px;border-left:1px solid #4A4540}}
+.c-pg{background:#16336B;color:#EAF0FA}
+.c-xm{background:#0D1B2B;color:#F2EDE3;justify-content:center}
+.xm-eye{font-family:"Jost",sans-serif;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:#D9C08A;margin-bottom:18px}
+.xm-h{font-family:"Newsreader",Georgia,serif;font-weight:300;font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;max-width:18ch}
+.xm-h em,.mc-h em{color:#D9C08A}
+.xm-rule{width:80px;height:1px;background:#B79A6B;margin-top:24px}
+.c-mc{background:#19253B;color:#F2EDE3;justify-content:center}
+.mc-mark{align-self:flex-start;margin-bottom:22px;font-family:"Inter",sans-serif;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;border-bottom:1px solid #B79A6B;padding-bottom:8px}
+.mc-stat{font-family:"EB Garamond",Georgia,serif;font-size:clamp(4.4rem,14vw,8rem);line-height:.9;color:#D9C08A}
+.mc-lab{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#D9C08A;margin:0 0 18px}
+.mc-h{font-family:"EB Garamond",Georgia,serif;font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.15;max-width:24ch}
+.c-yo{background:#F3EEE4;color:#22302A;justify-content:center}
+.yo-pill{align-self:flex-start;background:#456E58;color:#FFFFFF;border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:600;margin-bottom:16px}
+.yo-name{font-family:Georgia,serif;font-size:clamp(3rem,10vw,5.4rem);line-height:.95}
+.yo-h{font-family:Georgia,serif;font-size:clamp(1.3rem,3vw,1.8rem);margin-top:10px}
+.yo-h em{color:#456E58}
+.cmeta .live{color:var(--oro-claro);white-space:nowrap}
+.c-an{background:#C9B994;color:var(--text)}
+.cmeta{margin-top:20px}
+.cmeta .p{font-family:var(--mono);font-size:1rem;font-weight:500}
+.cmeta .t{color:var(--dark-muted);margin-top:8px;line-height:1.8}
+.cmeta h3{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,6vw,3.6rem);line-height:.92;margin:12px 0 10px}
+.cmeta p{color:var(--dark-muted);font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:46ch}
+
+/* Panel de caso */
+.sheet{position:fixed;inset:0;z-index:60;background:rgba(20,18,16,.6);display:none;align-items:flex-end;justify-content:center}
+.sheet.open{display:flex}
+.sheet .in{background:var(--paper-hi);color:var(--text);width:min(720px,100%);max-height:88vh;overflow:auto;border-radius:28px 28px 0 0;padding:28px clamp(20px,4vw,40px) 40px}
+.sheet .grab{width:54px;height:5px;border-radius:9px;background:#CFC8BC;margin:0 auto 18px}
+.sheet h3{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,7vw,3.6rem);line-height:.9;margin:10px 0 16px}
+.sheet ul{padding-left:20px;margin:16px 0 0;font-size:1.08rem}
+.sheet li{margin:8px 0}
+.sheet .x{margin-top:26px}
+
+/* 05 Docencia */
+.pass{margin-top:40px;display:grid;grid-template-columns:1fr auto;background:var(--paper-hi);border:2px solid var(--ink);box-shadow:0 12px 28px rgba(0,0,0,.08);transform:rotate(-.6deg)}
+.pass .m{padding:26px clamp(18px,3vw,32px);border-right:2px dashed var(--ink)}
+.pass h3{font-size:clamp(1.9rem,4.6vw,3.2rem);margin:10px 0}
+.pass p{color:var(--text-muted);max-width:60ch}
+.pass .nums{display:flex;gap:28px;flex-wrap:wrap;margin-top:18px}
+.pass .nums b{display:block;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:2.4rem;line-height:1}
+.pass .s{padding:18px 14px;writing-mode:vertical-rl;text-align:center}
+.note{margin-top:16px;background:var(--sand);padding:22px clamp(18px,3vw,32px);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;transform:rotate(.5deg)}
+.note h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.4rem)}
+
+/* 06 Formación */
+.edu{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px;border-top:2px solid var(--ink)}
+.edu div{padding:22px 18px 22px 0}
+.edu div+div{border-left:1px solid var(--ink);padding-left:18px}
+.edu h3{font-size:1.9rem;margin:10px 0 8px}
+.edu p{color:var(--text-muted)}
+.edu .mono{font-size:.7rem;color:var(--text-muted)}
+@media (max-width:760px){.edu{grid-template-columns:1fr}.edu div+div{border-left:0;padding-left:0;border-top:1px solid var(--ink)}}
+.certs{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.certs span{border:2px solid var(--ink);border-radius:999px;padding:8px 14px;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* 07 Final */
+.final{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden;padding:clamp(100px,13vw,150px) 0 150px}
+.ghost{position:absolute;right:-3%;top:40px;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:clamp(11rem,36vw,26rem);line-height:.8;color:transparent;-webkit-text-stroke:1.5px #3B3733;pointer-events:none;user-select:none}
+.final .fhead{border:0;margin-bottom:24px}
+.final .fhead .mono{color:var(--dark-muted)}
+.final .fhead b{color:var(--on-dark)}
+.final h2{font-size:clamp(3.4rem,12.5vw,8.4rem);position:relative}
+.final h2 .ital{display:block;font-size:1.08em;line-height:1.02}
+.final .lead{margin-top:34px;max-width:28ch;position:relative}
+.final .lead span{color:var(--dark-muted)}
+.call{position:relative;margin-top:44px;max-width:640px;background:var(--stone);border-radius:34px;padding:16px;display:flex;align-items:center;gap:16px}
+.call .av{width:80px;height:80px;flex:none;border-radius:50%;overflow:hidden;background:var(--paper-hi);color:var(--text);display:grid;place-items:center;font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:900;font-size:1.8rem}
+.call .who{flex:1;min-width:0}
+.call .who b{display:block;font-size:1.35rem;font-weight:700}
+.call .who span{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-muted)}
+.call .b{width:66px;height:66px;flex:none;border-radius:50%;border:0;display:grid;place-items:center;cursor:pointer;text-decoration:none}
+.call .copy{background:var(--paper-hi);color:var(--text)}
+.call .mail{background:#5DBF6B;color:#fff}
+.call svg{width:28px;height:28px}
+#copied{font-family:var(--mono);font-size:.75rem;color:var(--oro-claro);min-height:1.2em;margin-top:12px;position:relative}
+.lines{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;border-top:1px solid #4A4540;padding-top:20px}
+.lines .mono{display:block;color:var(--dark-muted);font-size:.7rem;margin-bottom:6px}
+.lines a,.lines p{font-size:1.1rem;text-decoration:none}
+.lines a:hover{text-decoration:underline}
+.foot{position:relative;margin-top:60px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--dark-muted);font-size:.7rem}
+@media (max-width:640px){.lines{grid-template-columns:1fr}.call .av{width:60px;height:60px;font-size:1.4rem}.call .b{width:54px;height:54px}}
+
+/* Notificación */
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);z-index:30;width:min(560px,calc(100% - 24px));background:rgba(240,235,227,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:28px;padding:18px 20px;display:flex;gap:16px;box-shadow:0 18px 40px rgba(0,0,0,.18);transition:opacity .3s,transform .3s}
+.toast.gone{opacity:0;transform:translate(-50%,20px);pointer-events:none}
+.toast .ic{width:54px;height:54px;flex:none;border-radius:14px;background:var(--ink);color:var(--on-dark);display:grid;place-items:center}
+.toast .ic svg{width:26px;height:26px}
+.toast .hd{display:flex;justify-content:space-between;gap:10px;color:var(--text-muted);font-size:.7rem}
+.toast b{display:block;font-size:1.1rem;margin-top:2px}
+.toast p{font-size:1rem;line-height:1.35}
+.toast .xb{background:none;border:0;cursor:pointer;font-size:1.1rem;padding:0 2px;color:var(--text-muted)}
+
+/* Dock */
+.dock{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:20;display:flex;gap:7px;padding:8px;border-radius:26px;background:rgba(236,231,222,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 30px rgba(0,0,0,.2);max-width:calc(100% - 20px)}
+.dock a{position:relative;width:54px;height:54px;flex:none;border-radius:16px;display:grid;place-items:center;text-decoration:none;color:var(--text);background:var(--paper-hi);box-shadow:inset 0 -2px 0 rgba(0,0,0,.06);transition:transform .15s}
+.dock a:hover{transform:translateY(-4px)}
+.dock a.cur::after{content:"";position:absolute;bottom:-8px;left:50%;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--ink)}
+.dock .k1{background:#E4DACA}.dock .k2{background:var(--sand)}.dock .k3{background:#3B3733;color:var(--on-dark)}.dock .k4{background:var(--ink);color:var(--on-dark)}
+.dock svg{width:24px;height:24px}
+.dock .cal{display:flex;flex-direction:column;overflow:hidden;padding:0}
+.dock .cal .m{background:var(--ink);color:var(--on-dark);width:100%;text-align:center;font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.08em;padding:2px 0}
+.dock .cal .d{font-size:1.45rem;font-weight:500;line-height:1.3}
+@media (max-width:480px){.dock{gap:5px;padding:6px}.dock a{width:41px;height:41px;border-radius:12px}.dock svg{width:20px;height:20px}.dock .cal .d{font-size:1.05rem}.toast{bottom:82px}}
+</style>
+</head>
+<body class="gridbg">
+
+<div id="progress" aria-hidden="true"></div>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="badge" href="#inicio" aria-label="Ir a la portada">MB</a>
+    <button class="menu-btn" type="button" id="open-menu" aria-expanded="false" aria-controls="menu">MENÚ</button>
+  </div>
+</div>
+
+<nav class="menu" id="menu" aria-label="Archivos">
+  <button class="menu-btn close" type="button" id="close-menu">CERRAR</button>
+  <a href="#inicio"><span>01</span>Portada</a>
+  <a href="#sobre-mi"><span>02</span>Sobre mí</a>
+  <a href="#que-hago"><span>03</span>Qué hago</a>
+  <a href="#trabajo"><span>04</span>Trabajo</a>
+  <a href="#docencia"><span>05</span>Docencia</a>
+  <a href="#formacion"><span>06</span>Formación</a>
+  <a href="#contacto"><span>07</span>Contacto</a>
+</nav>
+
+<main>
+  <!-- 01 PORTADA -->
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="meta mono">
+        <div class="dot">Portafolio — Edición 2026</div>
+        <div class="row"><span>Estrategia de marketing · Liderazgo en FMCG</span><span>Monterrey, MX</span></div>
+        <div>Marketing estratégico con impacto real · Archivo 01 / 07</div>
+      </div>
+      <hr class="rule">
+      <h1 class="cond name">Melissa<span class="r">Benavides</span></h1>
+
+      <div class="collage" id="collage">
+        <div class="drag st" style="left:0;top:0;transform:rotate(-5deg)">Estrategia</div>
+        <figure class="drag pin" style="right:1%;top:70px;transform:rotate(2.5deg)">
+          <img class="pin-photo" src="media/retrato-pro.jpg" alt="Melissa Benavides" draggable="false">
+          <blockquote>Convierto presupuesto en crecimiento de marca.</blockquote>
+          <span class="mono">Nora Melissa Benavides Esparza</span>
+        </figure>
+        <div class="drag tk" style="left:2%;bottom:5%;transform:rotate(-3deg)">
+          <div class="main">
+            <span class="mono">Admit one · 15 años de marketing</span>
+            <div class="route">P&amp;G → Tajín → Propio</div>
+            <span class="mono">Red profesional en 40+ países</span>
+          </div>
+          <div class="stub mono">Pase 001</div>
+        </div>
+        <div class="drag st dark" style="right:5%;bottom:0;transform:rotate(4deg)">IA aplicada</div>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn solid" href="#trabajo">Ver trabajo seleccionado <span aria-hidden="true">↗</span></a>
+        <a class="btn line" href="#contacto">Hablemos</a>
+      </div>
+      <div class="hero-foot">
+        <p class="mono">Arrastra las piezas<br>· Recorre el expediente</p>
+        <div class="spin">
+          <svg viewBox="0 0 132 132" aria-hidden="true"><defs><path id="circ" d="M66,66 m-54,0 a54,54 0 1,1 108,0 a54,54 0 1,1 -108,0"/></defs><text font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="3.2" fill="#0D1B2B"><textPath href="#circ">ESTRATEGIA CON INTENCIÓN ✳ DATOS ✳ MARCA ✳</textPath></text></svg>
+          <a href="#sobre-mi" aria-label="Bajar a Sobre mí">↓</a>
+        </div>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true"><div class="track">
+      <span>Brand strategy</span><i>✳</i><span>Go-to-market</span><i>✳</i><span>Media planning</span><i>✳</i><span>IA aplicada</span><i>✳</i><span>Marketing para salud</span><i>✳</i><span>Liderazgo de equipos</span><i>✳</i><span>Impacto real</span><i>✳</i>
+      <span>Brand strategy</span><i>✳</i><span>Go-to-market</span><i>✳</i><span>Media planning</span><i>✳</i><span>IA aplicada</span><i>✳</i><span>Marketing para salud</span><i>✳</i><span>Liderazgo de equipos</span><i>✳</i><span>Impacto real</span><i>✳</i>
+    </div></div>
+  </section>
+
+  <!-- 02 SOBRE MÍ -->
+  <section class="file" id="sobre-mi">
+    <div class="wrap">
+      <div class="fhead mono"><span><b>02</b>Sobre mí — la persona detrás de la estrategia</span><span class="aside">Fig. 02</span></div>
+      <figure class="polaroid"><div class="frame"><img src="media/estudio-tv.jpg" alt="Melissa en un set de televisión"></div><figcaption class="cap">Melissa</figcaption></figure>
+
+      <h2 class="cond soy">Soy <span class="ital hl">Melissa.</span></h2>
+      <p class="lead" style="font-weight:600;margin-bottom:26px">Lidero estrategia de marca y dirección de contenido, con más de 15 años en marcas globales de consumo masivo.</p>
+      <div class="body">
+        <p>He dirigido comunicación y media digital en contextos multiculturales, en Procter &amp; Gamble, Empresas Tajín y marcas de spirits en España, construyendo campañas visibles que fortalecen posicionamiento y alcance.</p>
+        <p>Aplico sistemas creativos que integran data e inteligencia artificial con criterio humano, para sostener la coherencia de marca y escalar impacto sin perder identidad.</p>
+        <p>Hoy dirijo tres compañías propias: XAMANS 360, Marketing Cliniq y Yournal. En las tres uso la IA como herramienta de trabajo diaria, de la estrategia al producto.</p>
+      </div>
+
+      <div class="tickets" aria-label="Ciudades">
+        <span class="ticket"><small>001</small>Monterrey</span>
+        <span class="ticket"><small>002</small>Aix-en-Provence</span>
+        <span class="ticket"><small>003</small>Madrid</span>
+        <span class="ticket"><small>004</small>CDMX</span>
+        <span class="ticket"><small>005</small>Tulum</span>
+      </div>
+
+      <div class="facts">
+        <div><span class="mono">Hoy</span><p>CEO de XAMANS 360, Marketing Cliniq y Yournal</p></div>
+        <div><span class="mono">Trayectoria</span><p>Head of Media Communication en Tajín · Media Communication &amp; Digital Manager en P&amp;G · Marketing Intelligence &amp; PR en España</p></div>
+        <div><span class="mono">Antes</span><p>Maxxium · Nielsen · IMS Health</p></div>
+        <div><span class="mono">También</span><p>Ponente en IA aplicada al marketing</p></div>
+        <div><span class="mono">Bases</span><p>Monterrey · Tulum · Ciudad de México · Madrid</p></div>
+      </div>
+
+      <div class="think file" style="padding-top:80px">
+        <span class="mono" style="color:var(--text-muted)">Cómo pienso</span>
+        <h3 class="cond">El marketing es una <span class="hl">decisión</span> de negocio.</h3>
+        <div class="body">
+          <p>Qué valor ofreces, a quién y cuánto inviertes para llegar. Empiezo por el diagnóstico, porque un buen diagnóstico es la base de cualquier estrategia.</p>
+          <p>Lo que no se mide no se mejora. Por eso cada plan que diseño llega con sus indicadores desde el primer día.</p>
+        </div>
+
+        <p class="mono" style="color:var(--text-muted);margin-top:60px">Cómo trabajo · elige un modo</p>
+        <div class="modes" role="group" aria-label="Modos de trabajo">
+          <button class="mode" type="button" data-m="0" aria-pressed="true"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18.5 20a6.5 6.5 0 0 0-3-5.5"/></svg></span>Entendimiento del cliente<span class="on">ON</span></button>
+          <button class="mode" type="button" data-m="1" aria-pressed="false"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1.2 1.1-2 2.5-2s2.5.8 2.5 2-1.1 1.7-2.5 2.2-2.5 1-2.5 2.3 1.1 2 2.5 2 2.5-.8 2.5-2"/></svg></span>Análisis de oportunidades<span class="on">ON</span></button>
+          <button class="mode" type="button" data-m="2" aria-pressed="false"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 4v6c0 4-3.5 7-8 8-4.5-1-8-4-8-8V7z"/></svg></span>Superioridad en producto<span class="on">ON</span></button>
+          <button class="mode" type="button" data-m="3" aria-pressed="false"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg></span>Creatividad direccional<span class="on">ON</span></button>
+          <button class="mode" type="button" data-m="4" aria-pressed="false"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h2M4 12h2M4 18h2M9 6h11M9 12h11M9 18h11"/></svg></span>Data e IA con criterio humano<span class="on">ON</span></button>
+        </div>
+        <div class="mode-card" aria-live="polite">
+          <span class="mono" id="mode-n">Modo 01 / 05 · ON</span>
+          <h4 class="cond" id="mode-t">Entendimiento del cliente</h4>
+          <p id="mode-p">Mi enfoque empieza por escuchar al cliente y comprender sus objetivos de marca. Con los momentos de verdad de P&amp;G leo qué busca, qué elige y qué recomienda cada persona.</p>
+          <span class="rings" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="imsg">
+        <div class="av"><img src="media/avatar3.jpg" alt="Melissa Benavides"></div>
+        <div class="nm">Melissa</div>
+        <div class="via mono">iMessage</div>
+        <hr>
+        <div id="msg-slot" style="text-align:left">
+          <div class="bubble" id="bubble">Mi trabajo empieza antes de la campaña: en qué mercado entrar, con qué propuesta y cuánto invertir en cada punto de contacto.<span class="react" id="react-badge"></span></div>
+        </div>
+        <p class="tap mono">Toca para reaccionar</p>
+        <div class="reacts" role="group" aria-label="Reacciones">
+          <button type="button" data-r="♥" aria-pressed="false" aria-label="Me encanta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9z"/></svg></button>
+          <button type="button" data-r="👍" aria-pressed="false" aria-label="Me gusta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 10v11H3V10zM7 10l4-8a2.5 2.5 0 0 1 3 3l-1 4h6a2 2 0 0 1 2 2.3l-1.4 7A2 2 0 0 1 17.6 20H7"/></svg></button>
+          <button type="button" data-r="HA" aria-pressed="false" aria-label="Ja ja">HA</button>
+          <button type="button" data-r="!!" aria-pressed="false" aria-label="Énfasis">!!</button>
+          <button type="button" data-r="?" aria-pressed="false" aria-label="Pregunta">?</button>
+          <button type="button" data-r="✦" aria-pressed="false" aria-label="Brillante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg></button>
+        </div>
+      </div>
+
+      <div class="file" style="padding-top:90px">
+        <span class="mono" style="color:var(--text-muted)">Un poco más de mí</span>
+        <div class="body" style="margin-top:16px">
+          <p>Además del marketing, me formé en psicología clínica. Me interesa cómo funcionan las personas por dentro, y eso se nota en cómo entiendo a cada consumidor.</p>
+        </div>
+        <div class="chips">
+          <span style="--c:var(--ink)">Psicología</span>
+          <span style="--c:#C8B88F">Wellness</span>
+          <span style="--c:#A88E7A">Astrología</span>
+          <span style="--c:#D9D3C8">Regulación del sistema nervioso</span>
+        </div>
+      </div>
+
+      <div class="lens">
+        <p class="hand lens-t">a través de mi lente <span aria-hidden="true">↓</span></p>
+        <div class="strip">
+          <figure class="pol" style="--r:-3deg"><video src="media/like.mp4" poster="media/like.jpg" autoplay muted loop playsinline aria-label="Melissa con un like gigante"></video><figcaption class="hand">media digital</figcaption></figure>
+          <figure class="pol" style="--r:2deg"><video src="media/ariel-baile.mp4" poster="media/ariel-baile.jpg" autoplay muted loop playsinline aria-label="Melissa en la activación de Ariel Revitacolor"></video><figcaption class="hand">Ariel Revitacolor</figcaption></figure>
+          <figure class="pol" style="--r:-1.5deg"><img src="media/premio.jpg" alt="Melissa levantando un trofeo con su equipo"><figcaption class="hand">celebrando resultados</figcaption></figure>
+          <figure class="pol" style="--r:2.5deg"><img src="media/downy-playera.jpg" alt="Melissa en un evento de Downy"><figcaption class="hand">Downy</figcaption></figure>
+          <figure class="pol" style="--r:-2deg"><img src="media/larios-evento.jpg" alt="Melissa con su equipo en un evento de Larios"><figcaption class="hand">Larios · España</figcaption></figure>
+          <figure class="pol" style="--r:1.5deg"><img src="media/hello-future.jpg" alt="Melissa hablando en un escenario"><figcaption class="hand">en el escenario</figcaption></figure>
+        </div>
+        <p class="mono" style="color:var(--text-muted);margin-top:10px;font-size:.7rem">Desliza →</p>
+      </div>
+
+      <div class="sign">
+        <p>Quiero que las marcas crezcan con estrategia, con datos y con una propuesta que la gente reconozca.</p>
+        <span class="hand">Hagamos algo que crezca.</span>
+      </div>
+    </div>
+    <div class="tear" aria-hidden="true"></div>
+  </section>
+
+  <!-- 03 QUÉ HAGO -->
+  <section class="plain" id="que-hago">
+    <div class="wrap file">
+      <div class="fhead mono"><span><b>03</b>Qué hago — caja de herramientas</span><span class="aside">4 disciplinas</span></div>
+      <h2 class="cond ways">Cuatro formas de <span class="ital">mover</span> una marca</h2>
+      <p class="lead" style="margin-top:26px;color:var(--text)">Estas son las áreas en las que trabajo y las habilidades dentro de cada una.</p>
+
+      <div class="disc">
+        <article class="dcard" tabindex="0">
+          <div class="top"><span class="mono">01 / EST</span><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z" stroke-linejoin="round"/></svg></span></div>
+          <h3 class="cond">Estrategia</h3>
+          <p>Convertir una necesidad de negocio en un plan con mercado, propuesta de valor e indicadores claros.</p>
+          <div class="tags"><span>Go-to-market</span><span>Posicionamiento</span><span>Client journey</span></div>
+        </article>
+        <article class="dcard" tabindex="0">
+          <div class="top"><span class="mono">02 / MED</span><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M8 17V11M13 17V7M18 17v-4"/></svg></span></div>
+          <h3 class="cond">Medios</h3>
+          <p>Decidir cuánto invertir, dónde y cuándo, con el retorno como criterio.</p>
+          <div class="tags"><span>Asignación de presupuesto</span><span>Media planning</span><span>E-commerce</span></div>
+        </article>
+        <article class="dcard" tabindex="0">
+          <div class="top"><span class="mono">03 / MAR</span><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 4v6c0 4-3.5 7-8 8-4.5-1-8-4-8-8V7z"/></svg></span></div>
+          <h3 class="cond">Marca</h3>
+          <p>Darle a una marca una identidad, una voz y una promesa que la gente reconozca.</p>
+          <div class="tags"><span>Brand management</span><span>Identidad</span><span>Creative brief</span></div>
+        </article>
+        <article class="dcard" tabindex="0">
+          <div class="top"><span class="mono">04 / IA</span><span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg></span></div>
+          <h3 class="cond">IA aplicada</h3>
+          <p>Flujos con agentes de IA para estrategia, contenido, análisis y desarrollo de producto.</p>
+          <div class="tags"><span>Agentes de IA</span><span>Transformación digital</span><span>Producto</span></div>
+        </article>
+      </div>
+
+      <div class="frames">
+        <span class="mono">Marcos de trabajo</span>
+        <div class="grid">
+          <div class="app a1"><b>ZM</b><span>Zero Moment of Truth</span></div>
+          <div class="app a2"><b>FM</b><span>First Moment of Truth</span></div>
+          <div class="app a3"><b>SM</b><span>Second Moment of Truth</span></div>
+          <div class="app a4"><b>TM</b><span>Third Moment of Truth</span></div>
+          <div class="app a5"><b>BP</b><span>Brand pyramid</span></div>
+          <div class="app a2"><b>1P</b><span>One-Page Memo</span></div>
+          <div class="app a1"><b>CB</b><span>Creative brief</span></div>
+          <div class="app a3"><b>CJ</b><span>Client journey</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 TRABAJO -->
+  <section class="dark" id="trabajo">
+    <div class="wrap">
+      <div class="fhead mono"><span><b>04</b>Trabajo seleccionado</span><span class="aside">Casos de éxito</span></div>
+      <h2 class="cond sel">Trabajo<br>seleccionado <sup>(12)</sup></h2>
+
+      <div class="stats">
+        <div><b>21 M</b><span>impactos · Tajín Dulce y YAYA</span></div>
+        <div><b>+75%</b><span>alcance con el mismo presupuesto · Tajín</span></div>
+        <div><b>+9pp</b><span>Top of Mind en 3 meses · Downy</span></div>
+        <div><b>40X</b><span>impactos y conversación · Always</span></div>
+        <div><b>+23%</b><span>ventas tras reposicionamiento · spirits</span></div>
+        <div><b>+20%</b><span>ventas en el primer año · Larios</span></div>
+      </div>
+
+      <div class="folders" role="group" aria-label="Filtrar casos">
+        <button class="folder" type="button" data-f="all" aria-pressed="true"><span class="f" aria-hidden="true"></span><span class="lb">Todos<sup>12</sup></span></button>
+        <button class="folder" type="button" data-f="taj" aria-pressed="false"><span class="f" aria-hidden="true"></span><span class="lb">Tajín<sup>2</sup></span></button>
+        <button class="folder" type="button" data-f="pg" aria-pressed="false"><span class="f" aria-hidden="true"></span><span class="lb">P&amp;G<sup>3</sup></span></button>
+        <button class="folder" type="button" data-f="sp" aria-pressed="false"><span class="f" aria-hidden="true"></span><span class="lb">Spirits<sup>3</sup></span></button>
+        <button class="folder" type="button" data-f="pro" aria-pressed="false"><span class="f" aria-hidden="true"></span><span class="lb">Propias<sup>3</sup></span></button>
+        <button class="folder" type="button" data-f="doc" aria-pressed="false"><span class="f" aria-hidden="true"></span><span class="lb">Docencia<sup>1</sup></span></button>
+      </div>
+
+      <div class="cases">
+        <article class="case" data-cat="taj">
+          <div class="cover c-taj ph"><img class="bgimg" src="media/tajin-dulce.jpg" alt="Campaña de Tajín Dulce"><span class="slug">tajin-dulce/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">21 M de impactos</div><div class="cs">Lanzamiento de Tajín Dulce y YAYA en el mercado mexicano.</div>
+            <button class="view" type="button" data-case="0">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—01</div><div class="t mono">Lanzamiento · Campaña · Plan de medios</div><h3>Tajín Dulce y YAYA</h3><p>Head of Media Communication. Desarrollo de campaña y plan de medios para dos lanzamientos en México.</p></div>
+        </article>
+        <article class="case" data-cat="taj">
+          <div class="cover c-tji ph"><span class="phones" aria-hidden="true"><img src="media/tajin-ig1.jpg" alt=""><img src="media/tajin-fb.jpg" alt=""><img src="media/tajin-ig2.jpg" alt=""></span><span class="slug">tajin-mundo/</span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">+75% de alcance</div><div class="cs">Llevando el ADN de México al mundo, con el mismo presupuesto.</div>
+            <button class="view" type="button" data-case="1">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—02</div><div class="t mono">Medios internacionales · Digitalización</div><h3>Expansión internacional de Tajín</h3><p>Estrategia de medios diferenciada por madurez de mercado para escalar una marca con identidad local a otros países.</p></div>
+        </article>
+        <article class="case" data-cat="pg">
+          <div class="cover c-dw ph"><img class="bgimg" src="media/downy-arena.jpg" alt="Evento de Downy en una arena"><span class="slug">downy/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">+9pp Top of Mind</div><div class="cs">Récord en los primeros 3 meses de lanzamiento.</div>
+            <button class="view" type="button" data-case="2">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—03</div><div class="t mono">Multiplataforma · Eventos · Media digital</div><h3>Downy Blossom</h3><p>Media Communication &amp; Digital Manager. Estrategia multiplataforma y eventos, con +4.4pp de penetración de mercado.</p></div>
+        </article>
+        <article class="case" data-cat="pg">
+          <div class="cover c-ar ph"><video class="bgimg" src="media/ariel-spot.mp4" poster="media/ariel-spot.jpg" autoplay muted loop playsinline aria-label="Spot de Ariel Revitacolor"></video><span class="slug">ariel/</span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">Lanzamiento en medios y eventos</div><div class="cs">Un lanzamiento que trajo crecimiento en ventas.</div>
+            <button class="view" type="button" data-case="3">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—04</div><div class="t mono">Medios · Eventos · Lanzamiento</div><h3>Ariel Revitacolor</h3><p>Media Communication &amp; Digital Manager. Lanzamiento en diversos medios y eventos, con crecimiento en ventas.</p></div>
+        </article>
+        <article class="case" data-cat="pg">
+          <div class="cover c-al"><span class="slug">always/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">40X conversación</div><div class="cs">Una marca en riesgo de descatalogación que volvió a crecer.</div>
+            <button class="view" type="button" data-case="4">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—05</div><div class="t mono">PR · Propósito de marca · 2020</div><h3>Always</h3><p>Campaña con Save the Children para conectar con el mensaje core de la marca: empoderar a las niñas.</p></div>
+        </article>
+        <article class="case" data-cat="sp">
+          <div class="cover c-la ph"><img class="bgimg" src="media/larios.jpg" alt="Larios Rosé"><span class="slug">larios/</span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">+20% en ventas</div><div class="cs">Campaña madre “Espíritu mediterráneo”, en su primer año.</div>
+            <button class="view" type="button" data-case="5">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—06</div><div class="t mono">Validación de concepto · Campaña</div><h3>Larios</h3><p>Marketing Intelligence &amp; PR. Validación de concepto y campaña madre que transformó la marca.</p></div>
+        </article>
+        <article class="case" data-cat="sp">
+          <div class="cover c-dyc ph"><img class="bgimg" src="media/dyc.jpg" alt="Campaña de DYC"><span class="slug">dyc/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">+9% brand image</div><div class="cs">Validación de concepto, campaña y nueva imagen.</div>
+            <button class="view" type="button" data-case="6">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—07</div><div class="t mono">Concepto · Campaña · Imagen de marca</div><h3>DYC</h3><p>Marketing Intelligence &amp; PR. Nueva campaña e imagen que incrementó el brand image de la marca.</p></div>
+        </article>
+        <article class="case" data-cat="sp">
+          <div class="cover c-sp ph"><img class="bgimg" src="media/larios-evento.jpg" alt="Evento de marca en España"><span class="slug">spirits-espana/</span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">+23% en ventas</div><div class="cs">Reposicionamiento de marcas de spirits en España.</div>
+            <button class="view" type="button" data-case="7">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—08</div><div class="t mono">U&amp;A · Insight · PR · Research</div><h3>Inteligencia de marca</h3><p>Marketing Intelligence &amp; PR. Rediseño del U&amp;A e integración de PR, research y medios en un mismo sistema de decisión.</p></div>
+        </article>
+        <article class="case" data-cat="pro">
+          <div class="cover c-xm"><span class="slug">xamans360.com/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
+            <div class="xm-eye">XAMANS · Marketing estratégico con impacto real</div>
+            <div class="xm-h">La estrategia que no hace crecer tu negocio <em>solo era teoría.</em></div>
+            <div class="xm-rule" aria-hidden="true"></div>
+            <button class="view" type="button" data-case="8">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—09</div><div class="t mono">Consultoría · Marca · Datos · IA · En línea</div><h3>XAMANS 360</h3><p>Mi consultoría: el rigor de las multinacionales de consumo, con marca, datos e IA, para negocios en crecimiento. <a class="live" href="https://www.xamans360.com">xamans360.com ↗</a></p></div>
+        </article>
+        <article class="case" data-cat="pro">
+          <div class="cover c-mc"><span class="slug">marketingcliniq.com/</span><span class="more" aria-hidden="true">•••</span>
+            <div class="mc-mark">Marketing Cliniq</div>
+            <div class="mc-lab">Diagnóstico · Protocolo · Tratamiento · Signos vitales</div>
+            <div class="mc-h">La ciencia del marketing aplicada a <em>tu práctica profesional.</em></div>
+            <button class="view" type="button" data-case="9">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—10</div><div class="t mono">Marketing para salud · Protocolo en 4 fases · En línea</div><h3>Marketing Cliniq</h3><p>Diagnostico la marca, prescribo un protocolo y mido lo que produce. <a class="live" href="https://www.marketingcliniq.com">marketingcliniq.com ↗</a></p></div>
+        </article>
+        <article class="case" data-cat="pro">
+          <div class="cover c-yo"><span class="slug">yournal/</span><span class="clip" aria-hidden="true"></span><span class="more" aria-hidden="true">•••</span>
+            <div class="yo-pill">En desarrollo</div>
+            <div class="yo-name">Yournal</div>
+            <div class="yo-h">La clínica no termina <em>en la sesión.</em></div>
+            <button class="view" type="button" data-case="10">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—11</div><div class="t mono">Producto · En desarrollo · 2026</div><h3>Yournal</h3><p>App que busca reducir el tiempo de diagnóstico en pacientes de terapia psicológica. Fundadora y CEO.</p></div>
+        </article>
+        <article class="case" data-cat="doc">
+          <div class="cover c-an"><span class="slug">anahuac/</span><span class="more" aria-hidden="true">•••</span>
+            <div class="ct">IA en la industria</div><div class="cs">Módulo 5 del Diplomado en IA para Creativos.</div>
+            <button class="view" type="button" data-case="11">Ver caso <span aria-hidden="true">↗</span></button></div>
+          <div class="cmeta"><div class="p">P—12</div><div class="t mono">Ponencia · 9 horas · 2026</div><h3>Universidad Anáhuac × Grupo Most</h3><p>Aplicaciones de la IA en la industria para el marketing, con casos reales de marcas globales.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 DOCENCIA -->
+  <section class="file gridbg" id="docencia" style="padding-bottom:20px">
+    <div class="wrap">
+      <div class="fhead mono"><span><b>05</b>Docencia</span><span class="aside">Ponencias y cursos</span></div>
+      <h2 class="cond big">En el aula, <span class="ital">con casos reales.</span></h2>
+      <div class="pass">
+        <div class="m">
+          <span class="mono">Ponente · Universidad Anáhuac México × Grupo Most</span>
+          <h3 class="cond">Aplicaciones de la IA en la industria para el marketing</h3>
+          <p>Módulo 5 del Diplomado en IA para Creativos. Desarrolló el contenido con libertad de cátedra: casos de marcas globales, simulaciones en equipo y prompts para Claude y Perplexity, con cada dato verificado.</p>
+          <div class="nums mono"><span><b>3</b>sesiones</span><span><b>9</b>horas</span><span><b>2026</b>jun–jul</span></div>
+        </div>
+        <div class="s mono">Módulo 05</div>
+      </div>
+      <div class="note"><h3>El Estratega Aumentado</h3><span class="mono">Programa in-company de XAMANS · 3 sesiones · 9 horas</span></div>
+    </div>
+  </section>
+
+  <!-- 06 FORMACIÓN -->
+  <section class="file gridbg" id="formacion" style="padding-bottom:clamp(90px,12vw,140px)">
+    <div class="wrap">
+      <div class="fhead mono"><span><b>06</b>Formación</span><span class="aside">Francia · México · España</span></div>
+      <h2 class="cond big">Formación <span class="ital">internacional.</span></h2>
+      <div class="edu">
+        <div><span class="mono">Francia · EQUIS + AMBA</span><h3 class="cond">IAE Aix-en-Provence</h3><p>Maestría (MSc) con Beca Eiffel del gobierno francés.</p></div>
+        <div><span class="mono">México · Francia</span><h3 class="cond">U-ERRE · ESC Rennes</h3><p>Licenciatura en la Universidad Regiomontana con programa en ESC Rennes.</p></div>
+        <div><span class="mono">España</span><h3 class="cond">Founderz × Microsoft</h3><p>Professional Master in AI &amp; Innovation.</p></div>
+      </div>
+      <div class="certs"><span>P&amp;G Manager of Others</span><span>P&amp;G Strategic Brand Management College</span><span>P&amp;G One-Page Memo</span><span>Psicología clínica</span></div>
+    </div>
+  </section>
+
+  <!-- 07 FINAL -->
+  <section class="final" id="contacto">
+    <div class="ghost" aria-hidden="true">MB</div>
+    <div class="wrap">
+      <div class="fhead mono"><span><b>07</b>Impresión final</span></div>
+      <h2 class="cond">Hagamos algo <span class="ital">que crezca.</span></h2>
+      <p class="lead">¿Tienes una marca, una clínica o un equipo que necesita una estratega con visión de negocio? <span>Lo siguiente bueno empieza con una conversación.</span></p>
+      <div class="call">
+        <div class="av"><img src="media/avatar3.jpg" alt="Melissa Benavides"></div>
+        <div class="who"><b>Melissa Benavides</b><span>Correo · Monterrey</span></div>
+        <button class="b copy" type="button" id="copy" aria-label="Copiar correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button>
+        <a class="b mail" href="mailto:mbenavides@xamans360.com" aria-label="Escribir correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      </div>
+      <p id="copied" aria-live="polite"></p>
+      <div class="lines">
+        <div><span class="mono">Correo</span><a href="mailto:mbenavides@xamans360.com">mbenavides@xamans360.com</a></div>
+        <div><span class="mono">Sitios</span><a href="https://xamans360.com">xamans360.com</a><br><a href="https://marketingcliniq.com">marketingcliniq.com</a></div>
+        <div><span class="mono">Base</span><p>Monterrey y Tulum, México</p></div>
+      </div>
+      <div class="foot mono"><span>© 2026 Nora Melissa Benavides Esparza</span><span>Archivo 07 / 07</span></div>
+    </div>
+  </section>
+</main>
+
+<!-- Panel de caso -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t">
+  <div class="in">
+    <div class="grab" aria-hidden="true"></div>
+    <img id="sh-img" alt="" style="display:none;width:100%;max-height:320px;object-fit:cover;border-radius:16px;margin-bottom:18px">
+    <span class="mono" id="sh-p"></span>
+    <h3 id="sh-t"></h3>
+    <p id="sh-d" style="font-size:1.1rem"></p>
+    <ul id="sh-l"></ul>
+    <a class="btn line x" id="sh-url" href="#" style="display:none;margin-right:10px">Visitar sitio <span aria-hidden="true">↗</span></a>
+    <button class="btn solid x" type="button" id="sh-x">Cerrar</button>
+  </div>
+</div>
+
+<!-- Notificación -->
+<div class="toast" id="toast" role="status">
+  <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+  <div style="flex:1">
+    <div class="hd mono"><span>Mensajes</span><span>Ahora <button class="xb" type="button" id="toast-x" aria-label="Cerrar notificación">✕</button></span></div>
+    <b>Melissa</b>
+    <p>¡Hola! Gracias por pasar. Usa el dock de abajo para recorrer el expediente.</p>
+  </div>
+</div>
+
+<!-- Dock -->
+<nav class="dock" aria-label="Accesos rápidos">
+  <a href="#sobre-mi" data-s="sobre-mi" aria-label="Sobre mí"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+  <a href="#que-hago" data-s="que-hago" class="k1" aria-label="Qué hago"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></a>
+  <a href="#trabajo" data-s="trabajo" class="k2" aria-label="Trabajo seleccionado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
+  <a href="#inicio" data-s="inicio" class="cal" aria-label="Portada"><span class="m" id="cal-m">NOV</span><span class="d" id="cal-d">16</span></a>
+  <a href="#formacion" data-s="formacion" aria-label="Formación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></a>
+  <a href="#docencia" data-s="docencia" class="k3" aria-label="Docencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></svg></a>
+  <a href="#contacto" data-s="contacto" class="k4" aria-label="Contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+</nav>
+
+<script>
+(function(){
+  var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+  /* Fecha del dock */
+  var M=["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"],now=new Date();
+  $("#cal-m").textContent=M[now.getMonth()];$("#cal-d").textContent=now.getDate();
+
+  /* Menú */
+  var menu=$("#menu"),ob=$("#open-menu"),cb=$("#close-menu");
+  function setMenu(o){menu.classList.toggle("open",o);ob.setAttribute("aria-expanded",o?"true":"false");if(o)cb.focus();}
+  ob.addEventListener("click",function(){setMenu(true)});
+  cb.addEventListener("click",function(){setMenu(false);ob.focus()});
+  $$("a",menu).forEach(function(a){a.addEventListener("click",function(){setMenu(false)})});
+
+  /* Progreso, secciones oscuras y dock activo */
+  var darks=$$("#trabajo,#contacto"),secs=$$("main > section[id]"),dockLinks=$$(".dock a");
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    $("#progress").style.width=(max>0?h.scrollTop/max*100:0)+"%";
+    var y=60,onDark=darks.some(function(d){var r=d.getBoundingClientRect();return r.top<y&&r.bottom>y});
+    document.body.classList.toggle("on-dark",onDark);
+    var cur="inicio";secs.forEach(function(s){if(s.getBoundingClientRect().top<window.innerHeight*.4)cur=s.id});
+    dockLinks.forEach(function(a){a.classList.toggle("cur",a.dataset.s===cur)});
+  }
+  window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+  /* Piezas arrastrables */
+  $$(".drag").forEach(function(el){
+    var sx,sy,ox,oy,active=false,base=el.style.transform||"";
+    el.addEventListener("pointerdown",function(e){active=true;sx=e.clientX;sy=e.clientY;ox=+(el.dataset.x||0);oy=+(el.dataset.y||0);el.classList.add("dragging");try{el.setPointerCapture(e.pointerId)}catch(_){}} );
+    el.addEventListener("pointermove",function(e){if(!active)return;var x=ox+e.clientX-sx,y=oy+e.clientY-sy;el.dataset.x=x;el.dataset.y=y;el.style.transform="translate("+x+"px,"+y+"px) "+base;});
+    function end(){active=false;el.classList.remove("dragging")}
+    el.addEventListener("pointerup",end);el.addEventListener("pointercancel",end);
+  });
+
+  /* Modos */
+  var modes=[
+    ["Entendimiento del cliente","Mi enfoque empieza por escuchar al cliente y comprender sus objetivos de marca. Con los momentos de verdad de P&G leo qué busca, qué elige y qué recomienda cada persona."],
+    ["Análisis de oportunidades","Leo cada mercado por su madurez y por sus tendencias para encontrar dónde la marca puede crecer más con la misma inversión."],
+    ["Superioridad en producto","Valido concepto, imagen y propuesta antes de escalar, para que la campaña cuente una promesa que el producto cumple."],
+    ["Creatividad direccional","Cada idea creativa responde a un objetivo de negocio y llega con su forma de medirse. Así transformo ideas en resultados concretos."],
+    ["Data e IA con criterio humano","Integro data e inteligencia artificial en sistemas creativos, y dejo las decisiones de marca en manos humanas para escalar sin perder identidad."]
+  ];
+  var mb=$$(".mode");
+  mb.forEach(function(b){b.addEventListener("click",function(){
+    mb.forEach(function(x){x.setAttribute("aria-pressed","false")});b.setAttribute("aria-pressed","true");
+    var i=+b.dataset.m;$("#mode-n").textContent="Modo 0"+(i+1)+" / 05 · ON";$("#mode-t").textContent=modes[i][0];$("#mode-p").textContent=modes[i][1];
+  })});
+
+  /* Reacciones */
+  var badge=$("#react-badge"),rb=$$(".reacts button");
+  rb.forEach(function(b){b.addEventListener("click",function(){
+    var on=b.getAttribute("aria-pressed")!=="true";
+    rb.forEach(function(x){x.setAttribute("aria-pressed","false")});
+    if(on){b.setAttribute("aria-pressed","true");badge.textContent=b.dataset.r;badge.classList.add("show")}else{badge.classList.remove("show")}
+  })});
+
+  /* Filtros de carpetas */
+  var fb=$$(".folder"),cases=$$(".case");
+  fb.forEach(function(b){b.addEventListener("click",function(){
+    fb.forEach(function(x){x.setAttribute("aria-pressed","false")});b.setAttribute("aria-pressed","true");
+    var f=b.dataset.f;cases.forEach(function(c){c.hidden=!(f==="all"||c.dataset.cat===f)});
+  })});
+
+  /* Panel de caso */
+  var data=[
+    ["P—01 · Head of Media Communication","Tajín Dulce y YAYA","Lanzamiento de Tajín Dulce y YAYA en el mercado mexicano.",["Desarrollo de campaña y plan de medios","Más de 21 M de impactos"]],
+    ["P—02 · Head of Media Communication","Expansión internacional de Tajín","Llevando el ADN de México al mundo.",["Reto: escalar una marca con fuerte identidad local a diferentes países","Estrategia: medios diferenciados por madurez de mercado y digitalización del conocimiento de marca","Optimización de alcance de 2000% con la nueva estrategia","+75% de alcance con el mismo presupuesto","Incremento en ventas internacionales"]],
+    ["P—03 · Media Communication & Digital Manager","Downy Blossom","Lanzamiento con estrategia multiplataforma y eventos.",["Resultado récord en los primeros 3 meses","+9pp de Top of Mind","+4.4pp de penetración de mercado","Planificación integrada de medios y segmentación avanzada de audiencias digitales","Modelo de medios Best in Class replicado regionalmente"]],
+    ["P—04 · Media Communication & Digital Manager","Ariel Revitacolor","Lanzamiento en diversos medios y eventos.",["Campaña en medios y activaciones en eventos","Crecimiento en ventas"]],
+    ["P—05 · 2020","Salvando Always de su descatalogación","En 2020 Always estaba en riesgo de descatalogación, con poco presupuesto y el reto de conectar con su mensaje core: empoderar a las niñas.",["Alianza con Save the Children y donación de toallas para las niñas que más lo necesitan","Barreras: bajo presupuesto y credibilidad","Estrategia: poner el tema en la conversación y ganar credibilidad","40X en impactos y conversación","+1pp, la primera subida después de 10 años","Aprobación de la ley de Menstruación Digna en Michoacán en 2021"]],
+    ["P—06 · Marketing Intelligence & PR","Larios · Espíritu mediterráneo","Validación de concepto y campaña madre que transformó la marca.",["Campaña madre “Espíritu mediterráneo”","+20% en ventas en su primer año"]],
+    ["P—07 · Marketing Intelligence & PR","DYC · Celebremos lo que somos","Validación de concepto, campaña y nueva imagen de marca.",["Nueva campaña y nueva imagen","+9% en brand image"]],
+    ["P—08 · Marketing Intelligence & PR","Inteligencia de marca y reposicionamiento","Elevar la relevancia cultural de marcas de spirits en España a partir de insight local y lectura de tendencias.",["Rediseño del U&A para capturar nuevas motivaciones","Plataforma de insight para innovación y comunicación","Integración de PR, research y medios en un mismo sistema de decisión","+23% en ventas tras el nuevo U&A y reposicionamiento","+5pp en Brand Power contra el año anterior"]],
+    ["P—09 · Consultoría · En línea","XAMANS 360","Consultoría de marketing estratégico que lleva el rigor de las multinacionales de consumo a negocios en crecimiento, con marca, datos e inteligencia artificial.",["Cuatro frentes: estrategia de marca y posicionamiento, inteligencia de datos, IA aplicada a la operación e investigación de mercados","Proceso: diagnóstico, arquitectura e implementación con transferencia al equipo","El Estratega Aumentado: programa in-company de IA aplicada al marketing, 3 sesiones y 9 horas","Vertical XAMANS Med: “Nadie te enseñó que tu consultorio es una empresa.”"],"https://www.xamans360.com"],
+    ["P—10 · Marketing para salud · En línea","Marketing Cliniq","“Diagnostico tu marca, prescribo un protocolo y mido lo que produce.”",["Protocolo en cuatro fases: Diagnóstico de Marca, Protocolo Estratégico, Tratamiento de Posicionamiento y Signos Vitales del Negocio","Para consultorios, clínicas y prácticas privadas en Monterrey, Ciudad de México y en remoto","Identidad propia: una Q dorada atravesada por una hélice de ADN"],"https://www.marketingcliniq.com"],
+    ["P—11 · Producto · En desarrollo","Yournal","App que busca reducir el tiempo de diagnóstico en pacientes de terapia psicológica.",["Fundadora y CEO","Principio de marca: la clínica no termina en la sesión","Producto construido con herramientas de IA, de la estrategia al código"]],
+    ["P—12 · Ponencia · 2026","Universidad Anáhuac × Grupo Most","Módulo 5 del Diplomado en IA para Creativos: Aplicaciones de la IA en la industria para el marketing.",["3 sesiones de 3 horas, junio y julio de 2026","Casos reales de marcas globales, con cada dato verificado","Simulaciones en equipo y prompts para Claude y Perplexity"]]
+  ];
+  var imgs=["media/yaya.jpg","media/tajin-fb.jpg","media/downy-playera.jpg","media/ariel-revista.jpg","","media/larios.jpg","media/dyc.jpg","media/larios-evento.jpg","","","",""];
+  var sheet=$("#sheet"),lastBtn=null;
+  function openCase(i,btn){
+    var d=data[i];lastBtn=btn;var si=$("#sh-img");if(imgs[i]){si.src=imgs[i];si.alt=d[1];si.style.display="block"}else{si.style.display="none"}$("#sh-p").textContent=d[0];$("#sh-t").textContent=d[1];$("#sh-d").textContent=d[2];
+    var ul=$("#sh-l");ul.innerHTML="";var su=$("#sh-url");if(d[4]){su.href=d[4];su.style.display="inline-flex"}else{su.style.display="none"}d[3].forEach(function(t){var li=document.createElement("li");li.textContent=t;ul.appendChild(li)});
+    sheet.classList.add("open");$("#sh-x").focus();
+  }
+  function closeCase(){sheet.classList.remove("open");if(lastBtn)lastBtn.focus()}
+  $$(".view").forEach(function(b){b.addEventListener("click",function(){openCase(+b.dataset.case,b)})});
+  $("#sh-x").addEventListener("click",closeCase);
+  sheet.addEventListener("click",function(e){if(e.target===sheet)closeCase()});
+  document.addEventListener("keydown",function(e){if(e.key!=="Escape")return;if(sheet.classList.contains("open"))closeCase();else if(menu.classList.contains("open")){setMenu(false);ob.focus()}});
+
+  /* Videos: respetar movimiento reducido */
+  if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches){$$("video").forEach(function(v){v.removeAttribute("autoplay");v.pause()})}
+
+  /* Notificación */
+  var toast=$("#toast");
+  $("#toast-x").addEventListener("click",function(){toast.classList.add("gone")});
+  setTimeout(function(){toast.classList.add("gone")},9000);
+
+  /* Copiar correo */
+  var msg=$("#copied");
+  $("#copy").addEventListener("click",function(){
+    try{navigator.clipboard.writeText("mbenavides@xamans360.com").then(function(){msg.textContent="Correo copiado: mbenavides@xamans360.com"},function(){msg.textContent="mbenavides@xamans360.com"})}
+    catch(e){msg.textContent="mbenavides@xamans360.com"}
+  });
+})();
+</script>
+</body>
+</html>
